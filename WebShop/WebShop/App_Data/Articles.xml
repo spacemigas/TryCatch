@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Articles>
+﻿<?xml version="1.0"?>
+<ArrayOfArticle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Article>
     <ID>101</ID>
     <Title>May Pendant Shade, Neon Blue</Title>
@@ -136,4 +136,4 @@
     <Category>Lamps</Category>
     <Description>Like its namesake, the Freddie shade commands attention. Designed with bold, geometric patterns, it softly illuminates bedrooms and living spaces.</Description>
   </Article>
-</Articles>
+</ArrayOfArticle>

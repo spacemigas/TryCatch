@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using Ninject;
+using WebApiContrib.IoC.Ninject;
+using WebShop.Models;
 
 namespace WebShop
 {
@@ -9,6 +9,10 @@ namespace WebShop
     {
         public static void Register(HttpConfiguration config)
         {
+            IKernel kernel = new StandardKernel();
+            kernel.Bind<IArticleRepository>().ToConstant(new ArticlesXmlRepository());
+            config.DependencyResolver = new NinjectResolver(kernel);
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
