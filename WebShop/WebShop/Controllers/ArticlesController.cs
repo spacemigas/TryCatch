@@ -14,9 +14,10 @@ namespace WebShop.Controllers
             _repository = repository;
         }
 
-        public IEnumerable<Article> GetArticles(int page, int size)
+        public IEnumerable<Article> GetArticles(int page)
         {
-            return _repository.Get().Skip(page * size).Take(size);
+            var size = 10;
+            return _repository.Get().Skip((page > 0 ? page - 1 : 0) * size).Take(size);
         }
         
         // GET api/articles

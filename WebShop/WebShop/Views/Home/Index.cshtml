@@ -1,7 +1,25 @@
-﻿<header>
-    <a href="~/">Web Shop</a>
-</header>
-<div>
-    <section class="catalog">
-    </section>
-</div>
+﻿<section class="catalog">
+    <ul data-bind="template: {name: 'articleTemplate', foreach: articles}"></ul>
+
+    <script id="articleTemplate" type="text/html">
+        <li class="article">
+            <img data-bind="attr: {src: 'images/articles/' + Picture}" />
+            <span data-bind="text: Title"></span>
+            <span data-bind="text: Price"></span>
+        </li>
+    </script>
+    <script type="text/javascript">
+        var viewModel = { 
+            articles: ko.observableArray([]),
+
+            loadPage: function(page) {
+                viewModel.articles([]);
+                $.getJSON("/api/articles?page=" + page, function (data) {
+                    viewModel.articles(data);
+                });
+            }
+        };
+        ko.applyBindings(viewModel);
+        viewModel.loadPage(1);
+    </script>
+</section>
