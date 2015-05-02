@@ -1,15 +1,18 @@
 function CartIndexViewModel() {
     var self = this,
-        cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
+        cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [],
+        subtotal = 0,
+        count = 0,
+        vatRate = 0.23;
 
-    this.items = ko.observableArray(cart);
-
-    $().ready(function () {
-        self.updateCart();
+    ko.utils.arrayForEach(cart, function (item) {
+        count += item.Quantity;
+        subtotal += item.Price;
     });
 
-    this.updateCart = function () {
-        var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
-        $('.cart .count').text(cart.length ? cart.length + ' items' : 'empty');
-    };
+    this.cart = ko.observableArray(cart);
+    this.subtotal = ko.observable(subtotal);
+    this.vat = ko.observable(subtotal * vatRate);
+    this.total = ko.observable(subtotal + this.vat());
+    this.count = ko.observable(count);
 }

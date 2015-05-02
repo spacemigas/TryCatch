@@ -1,10 +1,29 @@
 ﻿<section class="page">
 
-    <ul class="cart row" data-bind="foreach: items">
+    <h1>Shopping Cart</h1>
+
+    <div class="cart summary">
+        <div class="line">
+            <div class="label left">Subtotal</div>
+            <div class="subtotal money" data-bind="text: subtotal"></div>
+        </div>
+        <div class="line">
+            <div class="label left">VAT</div>
+            <div class="vat money" data-bind="text: vat"></div>
+        </div>
+        <div class="line">
+            <div class="label left">Total</div>
+            <div class="total money" data-bind="text: total"></div>
+        </div>
+    </div>
+
+    <a href="checkout" class="button checkout right">Checkout</a>
+
+    <ul class="cart list" data-bind="foreach: cart">
         <li class="article row">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="description" data-bind="text: Title"></div>
-            <div class="price" data-bind="text: Price"></div>
+            <div class="money" data-bind="text: Price"></div>
         </li>
     </ul>
 

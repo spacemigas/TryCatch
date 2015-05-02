@@ -1,10 +1,10 @@
 ﻿<section class="page">
 
-    <ul class="articles" data-bind="foreach: articles">
+    <ul class="articles list" data-bind="foreach: articles">
         <li class="article row" data-bind="click: $parent.select">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="description" data-bind="text: Title"></div>
-            <div class="price" data-bind="text: Price"></div>
+            <div class="money" data-bind="text: Price"></div>
         </li>
     </ul>
 
@@ -15,7 +15,7 @@
         <div class="selected article">
             <img class="photo" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="title" data-bind="text: Title"></div>
-            <div class="price" data-bind="text: Price"></div>
+            <div class="money" data-bind="text: Price"></div>
             <div class="description" data-bind="text: Description"></div>
             <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
             <a class="button close right" data-bind="click: $parent.cancel">Close</a>

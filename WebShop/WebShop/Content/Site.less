@@ -5,10 +5,13 @@
 @margin: 10px;
 @margin-big: 50px;
 @font-extra: 'montserratregular', sans-serif, serif;
+@font-medium: 16px;
+@font-large: 20px;
+@font-huge: 40px;
 
 body {
   font-family: Helvetica, Arial, sans-serif, serif;
-  font-size: 16px;
+  font-size: @font-medium;
   color: @color-black;
   width: 800px;
   margin-left: auto;
@@ -17,6 +20,7 @@ body {
 
 a {
   cursor: pointer;
+  color: @color-black;
 }
 
 a:visited {
@@ -62,18 +66,18 @@ li {
 }
 
 .header.logo {
-  font-size: 40px;
+  font-size: @font-huge;
   color: @color-gray;
 }
 
 .header.cart {
   margin-top: @margin;
-  font-size: 20px;
+  font-size: @font-large;
   color: @color-light;
 
   .count {
     margin-left: @margin;
-    font-size: 15px;
+    font-size: @font-medium;
   }
 }
 
@@ -104,7 +108,7 @@ li {
     border: @border;
     width: 600px;
     position: relative;
-    margin: 20% auto;
+    margin: 10% auto;
     padding: @margin-big;
     background: #fff;
   }
@@ -116,9 +120,9 @@ li {
   border-bottom: @border;
 }
 
-.price {
+.money {
   font-weight: bold;
-  font-size: 20px;
+  font-size: @font-large;
   &::after {
     content: ' €';
   }
@@ -152,4 +156,32 @@ li {
     margin-top: @margin-big;
     margin-bottom: @margin-big;
   }
+}
+
+.cart.summary {
+
+  border: @border;
+  padding: @margin @margin-big;
+
+  .line {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: @font-large;
+    margin-top: @margin;
+
+    .label {
+      display: inline-block;
+      width: 80%;
+    }
+
+    .money {
+      display: inline-block;
+      width: 20%;
+      text-align: right;
+    }
+  }
+}
+
+.cart.list {
+  margin-top: @margin-big;
 }

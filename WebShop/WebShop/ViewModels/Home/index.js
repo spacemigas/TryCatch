@@ -45,6 +45,7 @@ function HomeIndexViewModel() {
 
     this.updateCart = function () {
         var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
-        $('.cart .count').text(cart.length ? cart.length + ' items' : 'empty');
+        $('.cart .label').text(cart.length ? 'shopping cart' : null);
+        $('.cart .count').text(cart.length ? cart.length + ' items' : null);
     };
 }
