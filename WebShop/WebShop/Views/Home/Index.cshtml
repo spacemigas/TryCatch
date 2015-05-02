@@ -1,25 +1,47 @@
-﻿<section class="catalog">
-    <ul data-bind="template: {name: 'articleTemplate', foreach: articles}"></ul>
-
+﻿<section class="page">
+    <ul class="articles" data-bind="template: {name: 'articleTemplate', foreach: articles}"></ul>
+    <div class="pages">
+        <a class="previous">Previous</a>
+        <a class="next"">Next</a>
+    </div>
     <script id="articleTemplate" type="text/html">
         <li class="article">
-            <img data-bind="attr: {src: 'images/articles/' + Picture}" />
-            <span data-bind="text: Title"></span>
-            <span data-bind="text: Price"></span>
+            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}" />
+            <div class="description" data-bind="text: Title"></div>
+            <div class="price" data-bind="text: Price"></div>
         </li>
     </script>
     <script type="text/javascript">
         var viewModel = {
+            page: 1,
+            pages: 1,
             articles: ko.observableArray([]),
-
-            loadPage: function (page) {
-                viewModel.articles([]);
-                $.getJSON("/api/articles?page=" + page, function (data) {
-                    viewModel.articles(data);
-                });
-            }
         };
         ko.applyBindings(viewModel);
-        viewModel.loadPage(1);
+
+        $.getJSON("/api/articles?info=pages", function (data) {
+            viewModel.pages = parseInt(data);
+        });
+
+        function loadPage() {
+            viewModel.articles([]);
+            $.getJSON("/api/articles?page=" + viewModel.page, function (data) {
+                viewModel.articles(data);
+                $('.pages>.next').toggle(viewModel.page < viewModel.pages);
+                $('.pages>.previous').toggle(viewModel.page > 1);
+            });
+        }
+
+        $('.pages>.previous').click(function () {
+            viewModel.page--;
+            loadPage();
+        });
+
+        $('.pages>.next').click(function () {
+            viewModel.page++;
+            loadPage();
+        });
+
+        loadPage();
     </script>
 </section>

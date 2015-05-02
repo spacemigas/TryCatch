@@ -44,5 +44,10 @@ namespace WebShop.Models
             Articles[article.Id] = article;
             return update;
         }
+
+        public int Count()
+        {
+            return Articles.Count;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using WebShop.Models;
@@ -7,6 +8,7 @@ namespace WebShop.Controllers
 {
     public class ArticlesController : ApiController
     {
+        private const int _pageSize = 10;
         private IArticleRepository _repository;
 
         public ArticlesController(IArticleRepository repository)
@@ -14,10 +16,21 @@ namespace WebShop.Controllers
             _repository = repository;
         }
 
+        public string GetArticles(string info)
+        {
+            switch (info.ToLowerInvariant())
+            {
+                case "pages":
+                    return Math.Ceiling((double)_repository.Count() / _pageSize).ToString();
+                case "count":
+                    return _repository.Count().ToString();
+            }
+            return null;
+        }
+
         public IEnumerable<Article> GetArticles(int page)
         {
-            var size = 10;
-            return _repository.Get().Skip((page > 0 ? page - 1 : 0) * size).Take(size);
+            return _repository.Get().Skip((page > 0 ? page - 1 : 0) * _pageSize).Take(_pageSize);
         }
 
         // GET api/articles
