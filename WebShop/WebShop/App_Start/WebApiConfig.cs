@@ -9,10 +9,11 @@ namespace WebShop
     {
         public static void Register(HttpConfiguration config)
         {
-            IKernel kernel = new StandardKernel();
-            kernel.Bind<IArticleRepository>().ToConstant(new ArticlesXmlRepository());
-            config.DependencyResolver = new NinjectResolver(kernel);
-
+            using (var kernel = new StandardKernel())
+            {
+                kernel.Bind<IArticleRepository>().ToConstant(new ArticlesXmlRepository());
+                config.DependencyResolver = new NinjectResolver(kernel);
+            }
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

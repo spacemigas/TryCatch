@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Web.Hosting;
 using System.Xml.Serialization;
+using System;
 
 namespace WebShop.Models
 {
@@ -15,12 +16,13 @@ namespace WebShop.Models
         {
             var deserializer = new XmlSerializer(typeof(List<Article>));
             var filename = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"App_Data\Articles.xml");
-            _articles = ((List<Article>)deserializer.Deserialize(new StreamReader(filename))).ToDictionary(x => x.ID);
+            using (var reader = new StreamReader(filename))
+                _articles = ((List<Article>)deserializer.Deserialize(reader)).ToDictionary(x => x.Id);
         }
 
         public IEnumerable<Article> Get()
         {
-            return _articles.Values.OrderBy(article => article.ID);
+            return _articles.Values.OrderBy(article => article.Id);
         }
 
         public bool TryGet(int id, out Article article)
@@ -30,8 +32,11 @@ namespace WebShop.Models
 
         public Article Add(Article article)
         {
-            article.ID = _nextID++;
-            _articles[article.ID] = article;
+            if (article == null)
+                throw new ArgumentNullException("article");
+
+            article.Id = _nextID++;
+            _articles[article.Id] = article;
             return article;
         }
 
@@ -42,8 +47,11 @@ namespace WebShop.Models
 
         public bool Update(Article article)
         {
-            bool update = _articles.ContainsKey(article.ID);
-            _articles[article.ID] = article;
+            if (article == null)
+                throw new ArgumentNullException("article");
+
+            bool update = _articles.ContainsKey(article.Id);
+            _articles[article.Id] = article;
             return update;
         }
     }
