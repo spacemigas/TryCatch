@@ -29,4 +29,8 @@ function HomeIndexViewModel() {
     this.select = function () {
         self.selected(this);
     };
+
+    this.unselect = function () {
+        self.selected(null);
+    };
 }

@@ -1,4 +1,5 @@
 ﻿<section class="page">
+
     <ul class="articles" data-bind="foreach: articles">
         <li class="article" data-bind="click: $parent.select">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
@@ -6,15 +7,22 @@
             <div class="price" data-bind="text: Price"></div>
         </li>
     </ul>
+
     <div class="pages">
-        <a class="previous" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
-        <a class="next" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
+        <a class="button previous" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
+        <a class="button next" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
     </div>
-    <div class="selected" data-bind="with: selected">
-        <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
-        <div class="description" data-bind="text: Title"></div>
-        <div class="price" data-bind="text: Price"></div>
-        <a class="close">Close</a>
+
+    <div class="modal" data-bind="{with: selected, css: {open: selected}}">
+        <div class="selected">
+            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
+            <div class="title" data-bind="text: Title"></div>
+            <div class="price" data-bind="text: Price"></div>
+            <div class="description" data-bind="text: Description"></div>
+            <a class="button close" data-bind="click: $parent.unselect">Close</a>
+        </div>
     </div>
+
 </section>
+
 <script>ko.applyBindings(new HomeIndexViewModel());</script>
