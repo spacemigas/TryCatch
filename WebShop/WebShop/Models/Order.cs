@@ -7,8 +7,8 @@ namespace WebShop.Models
     {
         public Customer Customer { get; set; }
         public DateTime DateTime { get; set; }
-        public decimal SubTotal { get; set; }
-        public decimal VAT { get; set; }
+        public decimal Subtotal { get; set; }
+        public decimal Vat { get; set; }
         public decimal Total { get; set; }
         public List<OrderDetail> Details { get; private set; }
 
