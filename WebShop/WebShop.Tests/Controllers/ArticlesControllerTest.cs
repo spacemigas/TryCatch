@@ -1,14 +1,13 @@
 ﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebShop.Controllers;
-using WebShop.Models;
 
 namespace WebShop.Tests.Controllers
 {
     [TestClass]
     public class ArticlesControllerTest
     {
-        ArticlesController _controller;
+        private ArticlesController _controller;
 
         [TestInitialize]
         public void Initialize()

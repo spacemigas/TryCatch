@@ -9,10 +9,10 @@
         </li>
     </script>
     <script type="text/javascript">
-        var viewModel = { 
+        var viewModel = {
             articles: ko.observableArray([]),
 
-            loadPage: function(page) {
+            loadPage: function (page) {
                 viewModel.articles([]);
                 $.getJSON("/api/articles?page=" + page, function (data) {
                     viewModel.articles(data);

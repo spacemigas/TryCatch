@@ -12,7 +12,7 @@ namespace WebShop
             var kernel = new StandardKernel();
             kernel.Bind<IArticleRepository>().ToConstant(new ArticleXmlRepository());
             config.DependencyResolver = new NinjectResolver(kernel);
-         
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

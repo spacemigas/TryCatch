@@ -7,9 +7,9 @@ namespace WebShop.Controllers
 {
     public class ArticlesController : ApiController
     {
-        IArticleRepository _repository;
+        private IArticleRepository _repository;
 
-        public ArticlesController(IArticleRepository repository) 
+        public ArticlesController(IArticleRepository repository)
         {
             _repository = repository;
         }
@@ -19,7 +19,7 @@ namespace WebShop.Controllers
             var size = 10;
             return _repository.Get().Skip((page > 0 ? page - 1 : 0) * size).Take(size);
         }
-        
+
         // GET api/articles
         public IEnumerable<string> Get()
         {

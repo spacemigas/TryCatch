@@ -6,7 +6,8 @@ namespace WebShop.Models
 {
     public class ArticleRepository : IArticleRepository
     {
-        int _nextID = 0;
+        private int _nextID = 0;
+
         protected Dictionary<int, Article> Articles { get; set; }
 
         public IEnumerable<Article> Get()
