@@ -148,7 +148,8 @@
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\Article.cs" />
-    <Compile Include="Models\ArticlesXmlRepository.cs" />
+    <Compile Include="Models\ArticleXmlRepository.cs" />
+    <Compile Include="Models\ArticlesRepository.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IArticleRepository.cs" />
     <Compile Include="Models\Order.cs" />

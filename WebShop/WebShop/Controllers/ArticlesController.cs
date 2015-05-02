@@ -1,14 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using WebShop.Models;
 
 namespace WebShop.Controllers
 {
     public class ArticlesController : ApiController
     {
+        IArticleRepository _repository;
+
+        public ArticlesController(IArticleRepository repository) 
+        {
+            _repository = repository;
+        }
+
+        public IEnumerable<Article> GetArticles(int page, int size)
+        {
+            return _repository.Get().Skip(page * size).Take(size);
+        }
+        
         // GET api/articles
         public IEnumerable<string> Get()
         {

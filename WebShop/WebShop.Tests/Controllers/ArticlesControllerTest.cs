@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Web.Http;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebShop;
 using WebShop.Controllers;
+using WebShop.Models;
 
 namespace WebShop.Tests.Controllers
 {
     [TestClass]
     public class ArticlesControllerTest
     {
+        ArticlesController _controller;
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            _controller = new ArticlesController(new ArticleTestRepository());
+        }
+
         [TestMethod]
         public void Get()
         {
-            // Arrange
-            ArticlesController controller = new ArticlesController();
-
-            // Act
-            IEnumerable<string> result = controller.Get();
-
-            // Assert
+            var result = _controller.Get();
             Assert.IsNotNull(result);
             Assert.AreEqual(2, result.Count());
             Assert.AreEqual("value1", result.ElementAt(0));
@@ -32,50 +29,26 @@ namespace WebShop.Tests.Controllers
         [TestMethod]
         public void GetById()
         {
-            // Arrange
-            ArticlesController controller = new ArticlesController();
-
-            // Act
-            string result = controller.Get(5);
-
-            // Assert
+            var result = _controller.Get(5);
             Assert.AreEqual("value", result);
         }
 
         [TestMethod]
         public void Post()
         {
-            // Arrange
-            ArticlesController controller = new ArticlesController();
-
-            // Act
-            controller.Post("value");
-
-            // Assert
+            _controller.Post("value");
         }
 
         [TestMethod]
         public void Put()
         {
-            // Arrange
-            ArticlesController controller = new ArticlesController();
-
-            // Act
-            controller.Put(5, "value");
-
-            // Assert
+            _controller.Put(5, "value");
         }
 
         [TestMethod]
         public void Delete()
         {
-            // Arrange
-            ArticlesController controller = new ArticlesController();
-
-            // Act
-            controller.Delete(5);
-
-            // Assert
+            _controller.Delete(5);
         }
     }
 }
