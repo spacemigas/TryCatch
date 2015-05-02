@@ -1,47 +1,20 @@
 ﻿<section class="page">
-    <ul class="articles" data-bind="template: {name: 'articleTemplate', foreach: articles}"></ul>
-    <div class="pages">
-        <a class="previous">Previous</a>
-        <a class="next"">Next</a>
-    </div>
-    <script id="articleTemplate" type="text/html">
-        <li class="article">
-            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}" />
+    <ul class="articles" data-bind="foreach: articles">
+        <li class="article" data-bind="click: $parent.select">
+            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="description" data-bind="text: Title"></div>
             <div class="price" data-bind="text: Price"></div>
         </li>
-    </script>
-    <script type="text/javascript">
-        var viewModel = {
-            page: 1,
-            pages: 1,
-            articles: ko.observableArray([]),
-        };
-        ko.applyBindings(viewModel);
-
-        $.getJSON("/api/articles?info=pages", function (data) {
-            viewModel.pages = parseInt(data);
-        });
-
-        function loadPage() {
-            viewModel.articles([]);
-            $.getJSON("/api/articles?page=" + viewModel.page, function (data) {
-                viewModel.articles(data);
-                $('.pages>.next').toggle(viewModel.page < viewModel.pages);
-                $('.pages>.previous').toggle(viewModel.page > 1);
-            });
-        }
-
-        $('.pages>.previous').click(function () {
-            viewModel.page--;
-            loadPage();
-        });
-
-        $('.pages>.next').click(function () {
-            viewModel.page++;
-            loadPage();
-        });
-
-        loadPage();
-    </script>
+    </ul>
+    <div class="pages">
+        <a class="previous" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
+        <a class="next" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
+    </div>
+    <div class="selected" data-bind="with: selected">
+        <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
+        <div class="description" data-bind="text: Title"></div>
+        <div class="price" data-bind="text: Price"></div>
+        <a class="close">Close</a>
+    </div>
 </section>
+<script>ko.applyBindings(new HomeIndexViewModel());</script>

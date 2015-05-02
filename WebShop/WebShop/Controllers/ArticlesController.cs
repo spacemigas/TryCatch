@@ -16,16 +16,9 @@ namespace WebShop.Controllers
             _repository = repository;
         }
 
-        public string GetArticles(string info)
+        public int GetArticles(string pages)
         {
-            switch (info.ToLowerInvariant())
-            {
-                case "pages":
-                    return Math.Ceiling((double)_repository.Count() / _pageSize).ToString();
-                case "count":
-                    return _repository.Count().ToString();
-            }
-            return null;
+            return (int)Math.Ceiling((double)_repository.Count() / _pageSize);
         }
 
         public IEnumerable<Article> GetArticles(int page)
