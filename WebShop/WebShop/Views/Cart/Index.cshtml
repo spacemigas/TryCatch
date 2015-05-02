@@ -1,0 +1,13 @@
+﻿<section class="page">
+
+    <ul class="cart row" data-bind="foreach: items">
+        <li class="article row">
+            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
+            <div class="description" data-bind="text: Title"></div>
+            <div class="price" data-bind="text: Price"></div>
+        </li>
+    </ul>
+
+</section>
+
+<script>ko.applyBindings(new CartIndexViewModel());</script>

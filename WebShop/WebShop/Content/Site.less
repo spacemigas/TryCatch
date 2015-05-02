@@ -4,6 +4,7 @@
 @border: 1px dotted @color-light;
 @margin: 10px;
 @margin-big: 50px;
+@font-extra: 'montserratregular', sans-serif, serif;
 
 body {
   font-family: Helvetica, Arial, sans-serif, serif;
@@ -26,51 +27,58 @@ a:link {
   text-decoration: none;
 }
 
-.logo, .logo:visited {
-  font-size: 40px;
+ul {
+  padding-start: 0;
+  -webkit-padding-start: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  list-style-type: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.button {
+  margin-top: @margin;
+  margin-bottom: @margin;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.header {
   font-weight: bold;
   text-transform: uppercase;
-  color: @color-gray;
-  font-family: 'montserratregular', sans-serif, serif;
+  font-family: @font-extra;
   letter-spacing: 0.5px;
 }
 
-.articles {
-  padding-start: 0;
-  -webkit-padding-start: 0;
-
-  .article {
-    margin: 0;
-    display: inline-block;
-    width: ~'calc(50% - 3px)';
-    padding-bottom: @margin;
-    padding-top: @margin;
-    border-bottom: @border;
-    list-style-type: none;
-    cursor: pointer;
-
-    .thumb {
-      width: 108px;
-      height: 80px;
-    }
-  }
+.header.logo {
+  font-size: 40px;
+  color: @color-gray;
 }
 
-.price {
-  font-weight: bold;
+.header.cart {
+  margin-top: @margin;
   font-size: 20px;
-  &::after {
-    content: " €";
+  color: @color-light;
+
+  .count {
+    margin-left: @margin;
+    font-size: 15px;
   }
 }
 
-.pages {
-  .previous {
-    float: left;
-  }
-  .next {
-    float: right;
-  }
+.page {
+  margin-top: @margin-big;
 }
 
 .modal {
@@ -100,21 +108,48 @@ a:link {
     padding: @margin-big;
     background: #fff;
   }
+}
 
-  .close {
-    float: right;
+.row {
+  padding-bottom: @margin;
+  padding-top: @margin;
+  border-bottom: @border;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  &::after {
+    content: ' €';
   }
 }
 
-.selected {
+.thumb {
+  width: 108px;
+  height: 80px;
+}
+
+.photo {
+  width: 217px;
+  height: 161px;
+}
+
+.articles {
+  .article {
+    display: inline-block;
+    width: ~'calc(50% - 3px)';
+    cursor: pointer;
+  }
+}
+
+.modal .selected.article {
+  .title {
+    margin-top: @margin;
+    margin-bottom: @margin;
+  }
+
   .description {
     margin-top: @margin-big;
     margin-bottom: @margin-big;
-  }
-}
-
-.button {
-  &:hover {
-    text-decoration: underline;
   }
 }

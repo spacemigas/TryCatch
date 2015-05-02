@@ -8,6 +8,7 @@ function HomeIndexViewModel() {
 
     $().ready(function () {
         self.loadPage();
+        self.updateCart();
         $.getJSON("/api/articles?pages", self.pages);
     });
 
@@ -30,7 +31,20 @@ function HomeIndexViewModel() {
         self.selected(this);
     };
 
-    this.unselect = function () {
+    this.cancel = function () {
         self.selected(null);
+    };
+
+    this.addCart = function () {
+        var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
+        cart.push(this);
+        sessionStorage.cart = JSON.stringify(cart);
+        self.selected(null);
+        self.updateCart();
+    };
+
+    this.updateCart = function () {
+        var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
+        $('.cart .count').text(cart.length ? cart.length + ' items' : 'empty');
     };
 }

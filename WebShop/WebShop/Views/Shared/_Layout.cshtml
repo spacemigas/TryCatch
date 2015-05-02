@@ -12,7 +12,11 @@
 </head>
 <body>
     <header>
-        <a href="~/" class="logo">Web Shop</a>
+        <a href="~/" class="header logo">Web Shop</a>
+        <a href="~/cart" class="header cart right">
+            <span class="label">Shopping Cart</span>
+            <span class="count">Empty</span>
+        </a>
     </header>
     @RenderBody()
     @RenderSection("scripts", required: false)

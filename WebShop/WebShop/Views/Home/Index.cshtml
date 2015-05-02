@@ -1,25 +1,24 @@
 ﻿<section class="page">
 
     <ul class="articles" data-bind="foreach: articles">
-        <li class="article" data-bind="click: $parent.select">
+        <li class="article row" data-bind="click: $parent.select">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="description" data-bind="text: Title"></div>
             <div class="price" data-bind="text: Price"></div>
         </li>
     </ul>
 
-    <div class="pages">
-        <a class="button previous" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
-        <a class="button next" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
-    </div>
+    <a class="button previous left" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
+    <a class="button next right" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
 
     <div class="modal" data-bind="{with: selected, css: {open: selected}}">
-        <div class="selected">
-            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
+        <div class="selected article">
+            <img class="photo" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="title" data-bind="text: Title"></div>
             <div class="price" data-bind="text: Price"></div>
             <div class="description" data-bind="text: Description"></div>
-            <a class="button close" data-bind="click: $parent.unselect">Close</a>
+            <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
+            <a class="button close right" data-bind="click: $parent.cancel">Close</a>
         </div>
     </div>
 
