@@ -2,14 +2,55 @@
     <h1>Administration</h1>
 
     <ul data-bind="foreach: articles">
-        <li class="admin row">
-            <a>
-                <span data-bind="text: title" class="left" style="width: 70%"></span>
-                <span data-bind="text: price" class="money right" style="width: 30%"></span>
-            </a>
+        <li class="row" style="height: 30px">
+            <span data-bind="text: title" class="col60"></span>
+            <span data-bind="text: price" class="col10 money"></span>
+            <span class="col10"></span>
+            <a data-bind="click: $parent.update" class="col10 button">Update</a>
+            <a data-bind="click: $parent.delete" class="col10 button">Delete</a>
         </li>
     </ul>
+</section>
 
+<section class="modal" data-bind="css: {open: selected}">
+    <div class="selected record">
+        <form name="form" class="form checkout">
+            <fieldset>
+                <label for="articleID">ID</label>
+                <input id="articleID" type="number" required data-bind="value: articleID" readonly>
+            </fieldset>
+            <fieldset>
+                <label for="title">Title</label>
+                <input id="title" required maxlength="100" data-bind="value: title">
+            </fieldset>
+            <fieldset>
+                <label for="price">Price</label>
+                <input id="price" type="number" required data-bind="value: price">
+            </fieldset>
+            <fieldset>
+                <label for="category">Category</label>
+                <input id="category" required maxlength="100" data-bind="value: category">
+            </fieldset>
+            <fieldset>
+                <label for="picture">Picture</label>
+                <input id="picture" required maxlength="100" data-bind="value: picture">
+            </fieldset>
+            <div class="admin border photo">
+                <div data-bind="if: picture()">
+                    <img class="photo" data-bind="attr: {src: 'images/articles/' + picture()}"/>
+                </div>
+            </div>
+            <fieldset>
+                <label for="description">Description</label>
+                <textarea id="description" required data-bind="value: description"></textarea>
+            </fieldset>
+
+            <div class="actions">
+                <a class="button cancel left" data-bind="click: cancel">Cancel</a>
+                <a class="button submit right" data-bind="click: submit, css: {disabled: errors().length}">Submit</a>
+            </div>
+        </form>
+    </div>
 </section>
 
 <script>ko.applyBindings(new AdminViewModel());</script>

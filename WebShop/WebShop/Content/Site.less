@@ -2,6 +2,7 @@
 @color-gray: #333;
 @color-light: #ccc;
 @color-error: orangered;
+@color-readonly: #eee;
 @border: 1px dotted @color-light;
 @margin: 10px;
 @margin-big: 30px;
@@ -27,6 +28,18 @@ input, textarea {
   color: @color-black;
   border: @border;
   padding: @margin;
+
+  &[readonly] {
+    background-color: @color-readonly;
+  }
+}
+
+textarea {
+  height: 100px;
+}
+
+label {
+  vertical-align: top;
 }
 
 a {
@@ -173,6 +186,7 @@ h1 {
 .money {
   font-weight: bold;
   font-size: @font-large;
+  text-align: right;
   &::after {
     content: ' €';
   }
@@ -233,6 +247,45 @@ h1 {
   }
 }
 
-.admin.row {
-  height: 20px;
+.col10 {
+  display: inline-block;
+  width: 9%;
+}
+.col20 {
+  display: inline-block;
+  width: 20%;
+}
+.col30 {
+  display: inline-block;
+  width: 30%;
+}
+.col40 {
+  display: inline-block;
+  width: 40%;
+}
+.col50 {
+  display: inline-block;
+  width: 50%;
+}
+.col60 {
+  display: inline-block;
+  width: 60%;
+}
+.col70 {
+  display: inline-block;
+  width: 70%;
+}
+.col80 {
+  display: inline-block;
+  width: 80%;
+}
+.col90 {
+  display: inline-block;
+  width: 90%;
+}
+
+.admin.border.photo {
+  border: @border;
+  margin-left: 132px;
+  width: 250px;
 }
