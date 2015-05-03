@@ -47,6 +47,9 @@ namespace WebShop.Controllers
 
         public void Post([FromBody]Article article)
         {
+            var existing = _repository.Get(article.ArticleID);
+            if (existing != null)
+                _repository.Delete(article.ArticleID);
             _repository.Add(article);
         }
 

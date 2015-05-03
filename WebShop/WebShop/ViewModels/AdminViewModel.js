@@ -53,7 +53,8 @@ function AdminViewModel() {
             cache: false,
             type: 'POST',
             data: JSON.stringify(article),
-            contentType: 'application/json; charset=utf-8'
+            contentType: 'application/json; charset=utf-8',
+            success: self.load
         });
         self.selected(null);
     };

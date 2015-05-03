@@ -22,7 +22,7 @@ namespace WebShop
         {
             var serializer = new XmlSerializer(typeof(List<Article>));
             using (var writer = new StreamWriter(_filename))
-                serializer.Serialize(writer, Articles.Values.ToList());
+                serializer.Serialize(writer, Articles.Values.OrderBy(article => article.ArticleID).ToList());
         }
 
         public override Article Add(Article article)

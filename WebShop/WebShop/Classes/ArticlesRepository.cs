@@ -26,7 +26,7 @@ namespace WebShop
             if (article == null)
                 throw new ArgumentNullException("article");
 
-            article.ArticleID = _nextID++;
+            article.ArticleID = article.ArticleID > 0 ? article.ArticleID : _nextID++;
             Articles[article.ArticleID] = article;
             return article;
         }
