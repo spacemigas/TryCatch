@@ -1,0 +1,41 @@
+﻿<section class="page">
+
+    <h1>Checkout</h1>
+
+    <form name="form" class="form checkout" data-bind="with: customer">
+        <fieldset>
+            <label>First Name</label>
+            <input maxlength="50" data-bind="value: FirstName">
+        </fieldset>
+        <fieldset>
+            <label>Last Name</label>
+            <input maxlength="50" data-bind="value: LastName">
+        </fieldset>
+        <fieldset>
+            <label>Email</label>
+            <input type="email" maxlength="50" data-bind="value: Email">
+        </fieldset>
+        <fieldset>
+            <label>Address</label>
+            <input maxlength="50" data-bind="value: Address">
+        </fieldset>
+        <fieldset>
+            <label>House Number</label>
+            <input maxlength="50" data-bind="value: HouseNumber">
+        </fieldset>
+        <fieldset>
+            <label>City</label>
+            <input maxlength="50" data-bind="value: City">
+        </fieldset>
+        <fieldset>
+            <label>Zip Code</label>
+            <input maxlength="50" data-bind="value: ZipCode">
+        </fieldset>
+    </form>
+
+    <a class="button cancel left" href="~/cart">Cancel</a>
+    <a class="button submit right" data-bind="click: submit">Submit</a>
+
+</section>
+
+<script>ko.applyBindings(new CartViewModel());</script>

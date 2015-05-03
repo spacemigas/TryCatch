@@ -1,5 +1,6 @@
-function HomeIndexViewModel() {
-    var self = this;
+function HomeViewModel() {
+    var self = this,
+        cart = new CartViewModel();
 
     this.page = ko.observable(1);
     this.pages = ko.observable(1);
@@ -36,16 +37,13 @@ function HomeIndexViewModel() {
     };
 
     this.addCart = function () {
-        var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
-        cart.push(this);
-        sessionStorage.cart = JSON.stringify(cart);
         self.selected(null);
+        cart.add(this);
         self.updateCart();
     };
 
     this.updateCart = function () {
-        var cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [];
-        $('.cart .label').text(cart.length ? 'shopping cart' : null);
-        $('.cart .count').text(cart.length ? cart.length + ' items' : null);
+        $('.cart .label').text(cart.count() ? 'shopping cart' : null);
+        $('.cart .count').text(cart.count() ? cart.count() + ' items' : null);
     };
 }

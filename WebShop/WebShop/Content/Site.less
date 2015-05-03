@@ -4,6 +4,7 @@
 @border: 1px dotted @color-light;
 @margin: 10px;
 @margin-big: 50px;
+@margin-up: -20px;
 @font-extra: 'montserratregular', sans-serif, serif;
 @font-medium: 16px;
 @font-large: 20px;
@@ -16,6 +17,14 @@ body {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+input {
+  font-family: Helvetica, Arial, sans-serif, serif;
+  font-size: @font-medium;
+  color: @color-black;
+  border: @border;
+  padding: @margin;
 }
 
 a {
@@ -40,6 +49,10 @@ ul {
 li {
   margin: 0;
   list-style-type: none;
+}
+
+fieldset {
+  border: none;
 }
 
 .left {
@@ -159,8 +172,8 @@ li {
 }
 
 .cart.summary {
-
-  border: @border;
+  border-bottom: @border;
+  border-top: @border;
   padding: @margin @margin-big;
 
   .line {
@@ -184,4 +197,29 @@ li {
 
 .cart.list {
   margin-top: @margin-big;
+
+  .row {
+    .remove {
+      margin-top: @margin-up;
+      float: right;
+    }
+  }
+}
+
+.form.checkout {
+  padding-bottom: @margin-big;
+  padding-top: @margin-big;
+  border-bottom: @border;
+  border-top: @border;
+  width: 100%;
+
+  label {
+    display: inline-block;
+    width: 25%;
+  }
+
+  input {
+    display: inline-block;
+    width: 70%;
+  }
 }

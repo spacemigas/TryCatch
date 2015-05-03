@@ -17,16 +17,18 @@
         </div>
     </div>
 
-    <a href="checkout" class="button checkout right">Checkout</a>
+    <a href="cart/checkout" class="button checkout left">Checkout</a>
+    <a href="home" class="button home right">Home</a>
 
     <ul class="cart list" data-bind="foreach: cart">
         <li class="article row">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
             <div class="description" data-bind="text: Title"></div>
             <div class="money" data-bind="text: Price"></div>
+            <a class="button remove" data-bind="click: $parent.remove">Remove</a>
         </li>
     </ul>
 
 </section>
 
-<script>ko.applyBindings(new CartIndexViewModel());</script>
+<script>ko.applyBindings(new CartViewModel());</script>
