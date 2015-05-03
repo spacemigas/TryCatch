@@ -9,13 +9,13 @@ function CartViewModel() {
     this.total = ko.observable(0);
     this.count = ko.observable(0);
     this.customer = ko.observable({
-        FirstName: null,
-        LastName: null,
-        Email: null,
-        Address: null,
-        HouseNumber: null,
-        City: null,
-        ZipCode: null
+        firstName: null,
+        lastName: null,
+        email: null,
+        address: null,
+        houseNumber: null,
+        city: null,
+        zipCode: null
     });
 
     this.round = function (value) {
@@ -27,7 +27,7 @@ function CartViewModel() {
             count = 0;
         ko.utils.arrayForEach(self.cart(), function (item) {
             count++;
-            subtotal += item.Price;
+            subtotal += item.price;
         });
         self.subtotal(subtotal);
         self.vat(self.round(subtotal * vatRate));
@@ -47,24 +47,24 @@ function CartViewModel() {
     };
 
     this.submit = function () {
-        var data = {
+        var order = {
             customer: self.customer(),
-            articles: []
+            dateTime: new Date()
         };
         ko.utils.arrayForEach(self.cart(), function (item) {
-            data.articles.push(item.Id);
+            data.articles.push(item.id);
         });
         $.ajax({
             url: '/api/order',
             cache: false,
             type: 'POST',
-            data: JSON.stringify(data),
+            data: JSON.stringify(order),
             contentType: 'application/json; charset=utf-8',
             statusCode: {
                 201: function () {
                     sessionStorage.cart = JSON.stringify([]);
                 },
-                400: function (jqxhr) {
+                400: function () {
                 }
             }
         });

@@ -17,14 +17,14 @@
         </div>
     </div>
 
-    <a href="cart/checkout" class="button checkout left">Checkout</a>
-    <a href="home" class="button home right">Home</a>
+    <a href="cart/checkout" class="button checkout right">Checkout</a>
+    <a href=".." class="button back left">Back</a>
 
     <ul class="cart list" data-bind="foreach: cart">
         <li class="article row">
-            <img class="thumb" data-bind="attr: {src: 'images/articles/' + Picture}"/>
-            <div class="description" data-bind="text: Title"></div>
-            <div class="money" data-bind="text: Price"></div>
+            <img class="thumb" data-bind="attr: {src: 'images/articles/' + picture}"/>
+            <div class="description" data-bind="text: title"></div>
+            <div class="money" data-bind="text: price"></div>
             <a class="button remove" data-bind="click: $parent.remove">Remove</a>
         </li>
     </ul>

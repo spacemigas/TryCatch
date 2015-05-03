@@ -4,36 +4,36 @@
 
     <form name="form" class="form checkout" data-bind="with: customer">
         <fieldset>
-            <label>First Name</label>
-            <input maxlength="50" data-bind="value: FirstName">
+            <label for="firstName">First Name</label>
+            <input id="firstName" maxlength="50" data-bind="value: firstName">
         </fieldset>
         <fieldset>
-            <label>Last Name</label>
-            <input maxlength="50" data-bind="value: LastName">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" maxlength="50" data-bind="value: lastName">
         </fieldset>
         <fieldset>
-            <label>Email</label>
-            <input type="email" maxlength="50" data-bind="value: Email">
+            <label for="email">Email</label>
+            <input id="email" type="email" maxlength="50" data-bind="value: email">
         </fieldset>
         <fieldset>
-            <label>Address</label>
-            <input maxlength="50" data-bind="value: Address">
+            <label for="address">Address</label>
+            <input id="address" maxlength="50" data-bind="value: address">
         </fieldset>
         <fieldset>
-            <label>House Number</label>
-            <input maxlength="50" data-bind="value: HouseNumber">
+            <label for="houseNumber">House Number</label>
+            <input id="houseNumber" maxlength="50" data-bind="value: houseNumber">
         </fieldset>
         <fieldset>
-            <label>City</label>
-            <input maxlength="50" data-bind="value: City">
+            <label for="city">City</label>
+            <input id="city" maxlength="50" data-bind="value: city">
         </fieldset>
         <fieldset>
-            <label>Zip Code</label>
-            <input maxlength="50" data-bind="value: ZipCode">
+            <label for="zipCode">Zip Code</label>
+            <input id="zipCode" maxlength="50" data-bind="value: zipCode">
         </fieldset>
     </form>
 
-    <a class="button cancel left" href="~/cart">Cancel</a>
+    <a class="button cancel left" href="..">Cancel</a>
     <a class="button submit right" data-bind="click: submit">Submit</a>
 
 </section>
