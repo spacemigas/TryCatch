@@ -1,10 +1,9 @@
-﻿<section class="page">
-
+﻿<section>
     <h1>Catalog</h1>
 
-    <ul class="articles list" data-bind="foreach: articles">
+    <ul class="catalog list" data-bind="foreach: articles">
         <li class="article row" data-bind="click: $parent.select">
-            <img class="thumb" data-bind="attr: {src: 'images/articles/' + picture}"/>
+            <img class="photo" data-bind="attr: {src: 'images/articles/' + picture}"/>
             <div class="description" data-bind="text: title"></div>
             <div class="money" data-bind="text: price"></div>
         </li>
@@ -12,20 +11,19 @@
 
     <a class="button previous left" data-bind="{click: previousPage, if: page() > 1}">Previous</a>
     <a class="button next right" data-bind="{click: nextPage, if: page() < pages()}">Next</a>
+</section>
 
-    <div class="modal" data-bind="{with: selected, css: {open: selected}}">
-        <div class="selected article">
-            <img class="photo" data-bind="attr: {src: 'images/articles/' + picture}"/>
-            <div class="title" data-bind="text: title"></div>
-            <div class="money" data-bind="text: price"></div>
-            <div class="description" data-bind="text: description"></div>
-            <div class="actions">
-                <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
-                <a class="button close right" data-bind="click: $parent.cancel">Close</a>
-            </div>
+<section class="modal" data-bind="{with: selected, css: {open: selected}}">
+    <div class="selected article">
+        <img class="photo" data-bind="attr: {src: 'images/articles/' + picture}"/>
+        <div class="title" data-bind="text: title"></div>
+        <div class="money" data-bind="text: price"></div>
+        <div class="description" data-bind="text: description"></div>
+        <div class="actions">
+            <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
+            <a class="button close right" data-bind="click: $parent.cancel">Close</a>
         </div>
     </div>
-
 </section>
 
 <script>ko.applyBindings(new HomeViewModel());</script>
