@@ -3,20 +3,28 @@ function CartViewModel() {
         cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [],
         vatRate = 0.23;
 
+    ko.validation.init({
+        registerExtenders: true,
+        messagesOnModified: true,
+        insertMessages: true,
+        parseInputAttributes: true,
+        messageTemplate: null
+    }, true);
+
     this.cart = ko.observableArray(cart);
     this.subtotal = ko.observable(0);
     this.vat = ko.observable(0);
     this.total = ko.observable(0);
     this.count = ko.observable(0);
-    this.customer = ko.observable({
-        firstName: null,
-        lastName: null,
-        email: null,
-        address: null,
-        houseNumber: null,
-        city: null,
-        zipCode: null
-    });
+    this.title = ko.observable();
+    this.firstName = ko.observable();
+    this.lastName = ko.observable();
+    this.email = ko.observable();
+    this.address = ko.observable();
+    this.houseNumber = ko.observable();
+    this.city = ko.observable();
+    this.zipCode = ko.observable();
+    this.errors = ko.validation.group(this);
 
     this.round = function (value) {
         return Math.round(value * 100) / 100;
@@ -48,7 +56,16 @@ function CartViewModel() {
 
     this.submit = function () {
         var order = {
-            customer: self.customer(),
+            customer: {
+                title: self.title(),
+                firstName: self.firstName(),
+                lastName: self.lastName(),
+                email: self.email(),
+                address: self.address(),
+                houseNumber: self.houseNumber(),
+                city: self.city(),
+                zipCode: self.zipCode()
+            },
             details: []
         };
         ko.utils.arrayForEach(self.cart(), function (item) {

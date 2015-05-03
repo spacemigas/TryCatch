@@ -1,6 +1,6 @@
 ﻿<section class="page">
 
-    <h1>Shopping Cart</h1>
+    <h1>Shopping Cart Summary</h1>
 
     <div class="cart summary">
         <div class="line">
@@ -17,15 +17,19 @@
         </div>
     </div>
 
-    <a href="cart/checkout" class="button checkout right">Checkout</a>
-    <a href=".." class="button back left">Back</a>
+    <div class="actions">
+        <a href="cart/checkout" class="button checkout right" data-bind="css: {disabled: !cart().length}">Checkout</a>
+        <a href=".." class="button back left">Back</a>
+    </div>
+
+    <h1>Shopping Cart Detail</h1>
 
     <ul class="cart list" data-bind="foreach: cart">
         <li class="article row">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + picture}"/>
             <div class="description" data-bind="text: title"></div>
             <div class="money" data-bind="text: price"></div>
-            <a class="button remove" data-bind="click: $parent.remove">Remove</a>
+            <a class="button remove right up" data-bind="click: $parent.remove">Remove</a>
         </li>
     </ul>
 

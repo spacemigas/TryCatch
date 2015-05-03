@@ -12,14 +12,14 @@ namespace WebShop.Migrations
                 c => new
                     {
                         CustomerID = c.Int(nullable: false, identity: true),
-                        Email = c.String(),
-                        Title = c.String(),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        Address = c.String(),
-                        HouseNumber = c.String(),
-                        City = c.String(),
-                        ZipCode = c.String(),
+                        Email = c.String(nullable: false, maxLength: 50),
+                        Title = c.String(nullable: false, maxLength: 50),
+                        FirstName = c.String(nullable: false, maxLength: 50),
+                        LastName = c.String(nullable: false, maxLength: 50),
+                        Address = c.String(nullable: false, maxLength: 50),
+                        HouseNumber = c.String(nullable: false, maxLength: 50),
+                        City = c.String(nullable: false, maxLength: 50),
+                        ZipCode = c.String(nullable: false, maxLength: 50),
                     })
                 .PrimaryKey(t => t.CustomerID);
             

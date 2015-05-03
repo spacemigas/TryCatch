@@ -1,9 +1,10 @@
 ﻿@color-black: #000;
 @color-gray: #333;
 @color-light: #ccc;
+@color-error: orangered;
 @border: 1px dotted @color-light;
 @margin: 10px;
-@margin-big: 50px;
+@margin-big: 30px;
 @margin-up: -20px;
 @font-extra: 'montserratregular', sans-serif, serif;
 @font-medium: 16px;
@@ -55,12 +56,23 @@ fieldset {
   border: none;
 }
 
+h1 {
+  color: @color-gray;
+  margin-top: @margin-big;
+  padding-bottom: @margin;
+  border-bottom: @border;
+}
+
 .left {
   float: left;
 }
 
 .right {
   float: right;
+
+  &.up {
+    margin-top: @margin-up;
+  }
 }
 
 .button {
@@ -69,6 +81,16 @@ fieldset {
   &:hover {
     text-decoration: underline;
   }
+
+  &.disabled {
+    color: @color-light;
+    pointer-events: none;
+  }
+}
+
+.validationMessage {
+  color: @color-error;
+  padding-left: @margin;
 }
 
 .header {
@@ -94,11 +116,20 @@ fieldset {
   }
 }
 
-.page {
-  margin-top: @margin-big;
+.actions {
+  margin: @margin 0;
+  border-top: @border;
+  height: 40px;
 }
 
 .modal {
+
+  .actions {
+    margin: 0;
+    height: @margin;
+    border-top: none;
+  }
+
   position: fixed;
   top: 0;
   right: 0;
@@ -172,8 +203,6 @@ fieldset {
 }
 
 .cart.summary {
-  border-bottom: @border;
-  border-top: @border;
   padding: @margin @margin-big;
 
   .line {
@@ -195,31 +224,13 @@ fieldset {
   }
 }
 
-.cart.list {
-  margin-top: @margin-big;
-
-  .row {
-    .remove {
-      margin-top: @margin-up;
-      float: right;
-    }
-  }
-}
-
 .form.checkout {
-  padding-bottom: @margin-big;
-  padding-top: @margin-big;
-  border-bottom: @border;
-  border-top: @border;
-  width: 100%;
-
   label {
     display: inline-block;
-    width: 25%;
+    width: 20%;
   }
-
   input {
     display: inline-block;
-    width: 70%;
+    width: 40%;
   }
 }

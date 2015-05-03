@@ -11,7 +11,7 @@ namespace WebShop.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201505031353273_InitialCreate"; }
+            get { return "201505031438163_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

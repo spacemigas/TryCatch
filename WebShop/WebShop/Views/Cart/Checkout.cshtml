@@ -1,40 +1,45 @@
 ﻿<section class="page">
-
     <h1>Checkout</h1>
 
-    <form name="form" class="form checkout" data-bind="with: customer">
+    <form name="form" class="form checkout">
+        <fieldset>
+            <label for="email">Email</label>
+            <input id="email" type="email" required maxlength="50" data-bind="value: email">
+        </fieldset>
+        <fieldset>
+            <label for="title">Title</label>
+            <input id="title" required maxlength="50" data-bind="value: title">
+        </fieldset>
         <fieldset>
             <label for="firstName">First Name</label>
-            <input id="firstName" maxlength="50" data-bind="value: firstName">
+            <input id="firstName" required maxlength="50" data-bind="value: firstName">
         </fieldset>
         <fieldset>
             <label for="lastName">Last Name</label>
-            <input id="lastName" maxlength="50" data-bind="value: lastName">
-        </fieldset>
-        <fieldset>
-            <label for="email">Email</label>
-            <input id="email" type="email" maxlength="50" data-bind="value: email">
+            <input id="lastName" required maxlength="50" data-bind="value: lastName">
         </fieldset>
         <fieldset>
             <label for="address">Address</label>
-            <input id="address" maxlength="50" data-bind="value: address">
+            <input id="address" required maxlength="50" data-bind="value: address">
         </fieldset>
         <fieldset>
             <label for="houseNumber">House Number</label>
-            <input id="houseNumber" maxlength="50" data-bind="value: houseNumber">
+            <input id="houseNumber" required maxlength="50" data-bind="value: houseNumber">
         </fieldset>
         <fieldset>
             <label for="city">City</label>
-            <input id="city" maxlength="50" data-bind="value: city">
+            <input id="city" required maxlength="50" data-bind="value: city">
         </fieldset>
         <fieldset>
             <label for="zipCode">Zip Code</label>
-            <input id="zipCode" maxlength="50" data-bind="value: zipCode">
+            <input id="zipCode" required maxlength="50" data-bind="value: zipCode">
         </fieldset>
-    </form>
 
-    <a class="button cancel left" href="..">Cancel</a>
-    <a class="button submit right" data-bind="click: submit">Submit</a>
+        <div class="actions">
+            <a class="button cancel left" href="..">Cancel</a>
+            <a class="button submit right" data-bind="click: submit, css: {disabled: errors().length}">Submit</a>
+        </div>
+    </form>
 
 </section>
 

@@ -1,5 +1,7 @@
 ﻿<section class="page">
 
+    <h1>Catalog</h1>
+
     <ul class="articles list" data-bind="foreach: articles">
         <li class="article row" data-bind="click: $parent.select">
             <img class="thumb" data-bind="attr: {src: 'images/articles/' + picture}"/>
@@ -17,8 +19,10 @@
             <div class="title" data-bind="text: title"></div>
             <div class="money" data-bind="text: price"></div>
             <div class="description" data-bind="text: description"></div>
-            <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
-            <a class="button close right" data-bind="click: $parent.cancel">Close</a>
+            <div class="actions">
+                <a class="button add left" data-bind="click: $parent.addCart">Add to cart</a>
+                <a class="button close right" data-bind="click: $parent.cancel">Close</a>
+            </div>
         </div>
     </div>
 
