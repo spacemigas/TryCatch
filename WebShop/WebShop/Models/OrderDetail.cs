@@ -1,8 +1,12 @@
-﻿namespace WebShop.Models
+﻿namespace WebShop
 {
     public class OrderDetail
     {
-        public Article Article { get; set; }
+        public int OrderDetailID { get; set; }
+
+        public int OrderID { get; set; }
+
+        public int ArticleID { get; set; }
 
         public int Quantity { get; set; }
 

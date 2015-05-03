@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WebShop.Models
+namespace WebShop
 {
     public interface IArticleRepository
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WebShop.Models
+namespace WebShop
 {
     public class ArticleRepository : IArticleRepository
     {
@@ -12,7 +12,7 @@ namespace WebShop.Models
 
         public IEnumerable<Article> Get()
         {
-            return Articles.Values.OrderBy(article => article.Id);
+            return Articles.Values.OrderBy(article => article.ArticleID);
         }
 
         public bool TryGet(int id, out Article article)
@@ -25,8 +25,8 @@ namespace WebShop.Models
             if (article == null)
                 throw new ArgumentNullException("article");
 
-            article.Id = _nextID++;
-            Articles[article.Id] = article;
+            article.ArticleID = _nextID++;
+            Articles[article.ArticleID] = article;
             return article;
         }
 
@@ -40,8 +40,8 @@ namespace WebShop.Models
             if (article == null)
                 throw new ArgumentNullException("article");
 
-            bool update = Articles.ContainsKey(article.Id);
-            Articles[article.Id] = article;
+            bool update = Articles.ContainsKey(article.ArticleID);
+            Articles[article.ArticleID] = article;
             return update;
         }
 

@@ -1,8 +1,8 @@
-﻿namespace WebShop.Models
+﻿namespace WebShop
 {
     public class Article
     {
-        public int Id { get; set; }
+        public int ArticleID { get; set; }
 
         public string Category { get; set; }
 

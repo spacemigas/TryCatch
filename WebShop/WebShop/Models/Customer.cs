@@ -1,7 +1,11 @@
-﻿namespace WebShop.Models
+﻿namespace WebShop
 {
     public class Customer
     {
+        public int CustomerID { get; set; }
+
+        public string Email { get; set; }
+
         public string Title { get; set; }
 
         public string FirstName { get; set; }
@@ -12,10 +16,8 @@
 
         public string HouseNumber { get; set; }
 
-        public string ZipCode { get; set; }
-
         public string City { get; set; }
 
-        public string Email { get; set; }
+        public string ZipCode { get; set; }
     }
 }

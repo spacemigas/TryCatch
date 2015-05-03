@@ -49,13 +49,24 @@ function CartViewModel() {
     this.submit = function () {
         var order = {
             customer: self.customer(),
-            dateTime: new Date()
+            details: []
         };
         ko.utils.arrayForEach(self.cart(), function (item) {
-            data.articles.push(item.id);
+            var detail = ko.utils.arrayFirst(order.details, function (detail) {
+                return detail.articleId === item.articleId;
+            });
+            if (!detail) {
+                detail = {
+                    articleId: item.articleId,
+                    price: item.price,
+                    quantity: 0
+                };
+                order.details.push(detail);
+            }
+            detail.quantity++;
         });
         $.ajax({
-            url: '/api/order',
+            url: '/api/orders',
             cache: false,
             type: 'POST',
             data: JSON.stringify(order),

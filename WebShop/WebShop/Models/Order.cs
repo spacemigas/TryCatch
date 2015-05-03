@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebShop.Models
+namespace WebShop
 {
     public class Order
     {
-        public Customer Customer { get; set; }
+        public int OrderID { get; set; }
+
+        public int CustomerID { get; set; }
 
         public DateTime DateTime { get; set; }
 
@@ -15,7 +17,9 @@ namespace WebShop.Models
 
         public decimal Total { get; set; }
 
-        public List<OrderDetail> Details { get; private set; }
+        public ICollection<OrderDetail> Details { get; private set; }
+
+        public Customer Customer { get; set; }
 
         public Order()
         {

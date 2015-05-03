@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Hosting;
 using System.Xml.Serialization;
 
-namespace WebShop.Models
+namespace WebShop
 {
     public class ArticleXmlRepository : ArticleRepository
     {
@@ -13,7 +13,7 @@ namespace WebShop.Models
             var deserializer = new XmlSerializer(typeof(List<Article>));
             var filename = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, @"App_Data\Articles.xml");
             using (var reader = new StreamReader(filename))
-                Articles = ((List<Article>)deserializer.Deserialize(reader)).ToDictionary(article => article.Id);
+                Articles = ((List<Article>)deserializer.Deserialize(reader)).ToDictionary(article => article.ArticleID);
         }
     }
 }

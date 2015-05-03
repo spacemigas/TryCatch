@@ -4,7 +4,6 @@ using System.Web.Http;
 using Newtonsoft.Json.Serialization;
 using Ninject;
 using WebApiContrib.IoC.Ninject;
-using WebShop.Models;
 
 namespace WebShop
 {

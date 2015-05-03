@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <ArrayOfArticle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Article>
-    <Id>101</Id>
+    <ArticleID>101</ArticleID>
     <Title>May Pendant Shade, Neon Blue</Title>
     <Price>45</Price>
     <Picture>may_pendant_light_blue_pl.jpg</Picture>
@@ -9,7 +9,7 @@
     <Description>Inspired by fashion runways, these shades are designed to stand out. The neon accents lets you show off your style, just turn them on and strike a pose.</Description>
   </Article>
   <Article>
-    <Id>102</Id>
+    <ArticleID>102</ArticleID>
     <Title>May Pendant Shade, Neon Orange</Title>
     <Price>19</Price>
     <Picture>may_pendant_light_orange_pl.jpg</Picture>
@@ -17,7 +17,7 @@
     <Description>If you already have pendant lighting set up in your home then you’re good to go. There’s no need to call an electrician, these shades can be fitted quickly and easily.</Description>
   </Article>
   <Article>
-    <Id>103</Id>
+    <ArticleID>103</ArticleID>
     <Title>May Pendant Shade, Neon Pink</Title>
     <Price>29</Price>
     <Picture>may_pendant_light_pink_pl.jpg</Picture>
@@ -25,7 +25,7 @@
     <Description>Looking to brighten up a room? Try hanging a series above your dining table, give your living space an arty appeal or add a touch of fun in a classic white bedroom.</Description>
   </Article>
   <Article>
-    <Id>104</Id>
+    <ArticleID>104</ArticleID>
     <Title>Hue Pendant Shade, Grey &amp; Copper</Title>
     <Price>29</Price>
     <Picture>hue_pendant_light_grey_pl_1.jpg</Picture>
@@ -33,7 +33,7 @@
     <Description>It’s doesn’t matter if it’s day or night, Hue looks super sleek on or off. The shade is made with cotton in a soft grey or deep navy. The reflective copper liner throws the light further and gives any room or hallway a warm glow.</Description>
   </Article>
   <Article>
-    <Id>105</Id>
+    <ArticleID>105</ArticleID>
     <Title>Broadway Star Table Lamp, Black</Title>
     <Price>99</Price>
     <Picture>broardway_small_star_pl_3.jpg</Picture>
@@ -41,7 +41,7 @@
     <Description>Get some classic New York glamour with the Broadway. We dare you to try and find lighting with more statement.</Description>
   </Article>
   <Article>
-    <Id>106</Id>
+    <ArticleID>106</ArticleID>
     <Title>Broadway Arrow Table Lamp, Black</Title>
     <Price>89</Price>
     <Picture>broardway_arrow_pl_5.jpg</Picture>
@@ -49,7 +49,7 @@
     <Description>Table or wall? It's your choice - with handy wall fittings and a cable mounted switch, you can set it up exactly as you like.</Description>
   </Article>
   <Article>
-    <Id>107</Id>
+    <ArticleID>107</ArticleID>
     <Title>Broadway Arrow Table Lamp, Black</Title>
     <Price>169</Price>
     <Picture>chicago_lamp_blacksilver_pl_2_2.jpg</Picture>
@@ -57,7 +57,7 @@
     <Description>Bring some vintage Hollywood glamour into your home with this tripod floor lamp. Inspired by film sets from days gone by.</Description>
   </Article>
   <Article>
-    <Id>108</Id>
+    <ArticleID>108</ArticleID>
     <Title>Navy Tripod Floor Lamp, Black</Title>
     <Price>99</Price>
     <Picture>3_navy_black__1.jpg</Picture>
@@ -65,7 +65,7 @@
     <Description>This lamp adds a contemporary, nautical edge to your look. Made with a seafaring tripod structure and chrome metal detailing.</Description>
   </Article>
   <Article>
-    <Id>109</Id>
+    <ArticleID>109</ArticleID>
     <Title>Alfred Tripod Floor Lamp, White</Title>
     <Price>149</Price>
     <Picture>alfred_tripod_floor_lamp_white.jpg</Picture>
@@ -73,7 +73,7 @@
     <Description>A statement piece with an iconic tripod shape and sleek, shuttered shade. Inspired by studio lights from Hollywood's golden era</Description>
   </Article>
   <Article>
-    <Id>110</Id>
+    <ArticleID>110</ArticleID>
     <Title>Cohen Double Floor Lamp, White and Natural Oak</Title>
     <Price>119</Price>
     <Picture>cohen_double_light_white_pl_2.jpg</Picture>
@@ -81,7 +81,7 @@
     <Description>A true statement piece, the doubled headed industrial design is softened by the offset of natural wood and bold single colours.</Description>
   </Article>
   <Article>
-    <Id>111</Id>
+    <ArticleID>111</ArticleID>
     <Title>Cohen Table Lamp, Memphis Blue and Natural Oak</Title>
     <Price>55</Price>
     <Picture>cohen_table_lamp_blue_pl.jpg</Picture>
@@ -89,7 +89,7 @@
     <Description>This table lamp is all about the smart detailing, the shade top and handle are both finished in American Oak. It's fun and modern and would be an ideal addition to a loft apartment or city pad.</Description>
   </Article>
   <Article>
-    <Id>112</Id>
+    <ArticleID>112</ArticleID>
     <Title>Lab Table Lamp, Teal, Deep Grey and Mustard</Title>
     <Price>129</Price>
     <Picture>lab_table_lamp_mustard_grey_blue_pl.jpg</Picture>
@@ -97,7 +97,7 @@
     <Description>Designed to steal the show and be the focal point of the room. Each piece of glass is mouth blown and hand moulded. Every curve and air bubble seen through the glass are marks of a handmade piece.</Description>
   </Article>
   <Article>
-    <Id>113</Id>
+    <ArticleID>113</ArticleID>
     <Title>Austin Cluster Pendant, Copper</Title>
     <Price>79</Price>
     <Picture>austin_cluster_light_pl.jpg</Picture>
@@ -105,7 +105,7 @@
     <Description>The shape of the shades is inspired by space-age interiors of the 60s. The spiral of globe shades creates concentrated pools of light while the decorative air vents at the top of the piece diffuse the glow for an ambient uplight.</Description>
   </Article>
   <Article>
-    <Id>114</Id>
+    <ArticleID>114</ArticleID>
     <Title>Austin Spot Wall Light, Copper</Title>
     <Price>69</Price>
     <Picture>austin_spot_wall_light_copper_pl.jpg</Picture>
@@ -113,7 +113,7 @@
     <Description>Classic, chic, modern, industrial. The copper trend is one of the most versatile and fun to play around with. These wall lights are the ideal addition to any stylish home.</Description>
   </Article>
   <Article>
-    <Id>115</Id>
+    <ArticleID>115</ArticleID>
     <Title>Cage Pendant, Black</Title>
     <Price>99</Price>
     <Picture>cage_pedant_light_black_1.jpg</Picture>
@@ -121,7 +121,7 @@
     <Description>Add a unique and stylish touch to your home with this lantern-shaped pendant light - a modern addition to any living space.</Description>
   </Article>
   <Article>
-    <Id>116</Id>
+    <ArticleID>116</ArticleID>
     <Title>Hive Pendant Light, Soft Green</Title>
     <Price>59</Price>
     <Picture>hive-pedant-light-soft-green.jpg</Picture>
@@ -129,7 +129,7 @@
     <Description>This geometric pendant light will bring a modern edge to any living space.</Description>
   </Article>
   <Article>
-    <Id>117</Id>
+    <ArticleID>117</ArticleID>
     <Title>Freddie Pendant Shade, Black</Title>
     <Price>45</Price>
     <Picture>freddie_hanging_lights_black.jpg</Picture>
@@ -137,7 +137,7 @@
     <Description>Like its namesake, the Freddie shade commands attention. Designed with bold, geometric patterns, it softly illuminates bedrooms and living spaces.</Description>
   </Article>
   <Article>
-    <Id>201</Id>
+    <ArticleID>201</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Teal and Yellow Mix</Title>
     <Price>20</Price>
     <Picture>verdan_teal_and_yellow_pl.jpg</Picture>
@@ -145,7 +145,7 @@
     <Description>Make a statement by mixing and matching these awesome graphics. Feeling brave? This cushion is part of our Memphis look. Explore these designs and see how bold you can go.</Description>
   </Article>
   <Article>
-    <Id>202</Id>
+    <ArticleID>202</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Grey and Yellow Mix</Title>
     <Price>20</Price>
     <Picture>verdan_grey_and_yellow_pl.jpg</Picture>
@@ -153,7 +153,7 @@
     <Description>Full of energy and attitude, Verdon is an eclectic mix of bold colours and big shapes. A fun throwback to the 80s sure to give your room a stylish lift.</Description>
   </Article>
   <Article>
-    <Id>203</Id>
+    <ArticleID>203</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Green and Blue Mix</Title>
     <Price>20</Price>
     <Picture>verdan_green_and_blue_pl_1.jpg</Picture>
@@ -161,7 +161,7 @@
     <Description>We hit up our designer friends, Casa Estudio, for these cushions. Famous for their use of geometric patterns and colour clashes, Verdon gives your home instant designer cred.</Description>
   </Article>
   <Article>
-    <Id>204</Id>
+    <ArticleID>204</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Green and Yellow Mix</Title>
     <Price>20</Price>
     <Picture>verdan_green_and_yellow_pl.jpg</Picture>
@@ -169,7 +169,7 @@
     <Description>Each totally rad design has been digitally printed onto 100% cotton fabric. The inside is then filled with a luxury feather pad. These guys love a good hug, too.</Description>
   </Article>
   <Article>
-    <Id>205</Id>
+    <ArticleID>205</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Red</Title>
     <Price>20</Price>
     <Picture>verdan_red_pl.jpg</Picture>
@@ -177,7 +177,7 @@
     <Description>Full of energy and attitude, Verdon is an eclectic mix of bold colours and big shapes. A fun throwback to the 80s sure to give your room a stylish lift.</Description>
   </Article>
   <Article>
-    <Id>206</Id>
+    <ArticleID>206</ArticleID>
     <Title>Verdon Cushion 45 x 45cm, Yellow</Title>
     <Price>20</Price>
     <Picture>verdan_yellow_pl.jpg</Picture>
@@ -185,7 +185,7 @@
     <Description>We hit up our designer friends, Casa Estudio, for these cushions. Famous for their use of geometric patterns and colour clashes, Verdon gives your home instant designer cred.</Description>
   </Article>
   <Article>
-    <Id>207</Id>
+    <ArticleID>207</ArticleID>
     <Title>Script Printed Ribs Cushion 43 x 43cm, Grey</Title>
     <Price>18</Price>
     <Picture>script_ribs_black_pl.jpg</Picture>
@@ -193,7 +193,7 @@
     <Description>Designed inhouse by the MADE.COM team and digitally printed by a family-run business, our Script cushions are keeping things British.</Description>
   </Article>
   <Article>
-    <Id>208</Id>
+    <ArticleID>208</ArticleID>
     <Title>Mya Cotton Velvet Cushion 50cm x 50cm, Plum with Purple Piping</Title>
     <Price>20</Price>
     <Picture>mya_velvet_cushion_purple_pl.jpg</Picture>
@@ -201,7 +201,7 @@
     <Description>You could get lost looking into the bold purple of this Mya cushion. In a cotton velvet fabric, the colour is rich right down to the contrast piping.</Description>
   </Article>
   <Article>
-    <Id>209</Id>
+    <ArticleID>209</ArticleID>
     <Title>Mya Cotton Velvet Cushion 50cm x 50cm, Purple with Plum Piping</Title>
     <Price>30</Price>
     <Picture>mya_velvet_cushion_deep_purple_pl_2.jpg</Picture>
@@ -209,7 +209,7 @@
     <Description>The country is known for its premium cotton manufacturing, so of course we chose to have the fabric for these cushions woven in the cotton mills of Portugal.</Description>
   </Article>
   <Article>
-    <Id>210</Id>
+    <ArticleID>210</ArticleID>
     <Title>Mya Cotton Velvet Cushion 50cm x 50cm, Teal with Purple Piping</Title>
     <Price>30</Price>
     <Picture>mya_velvet_cushion_turquoise_pl_1.jpg</Picture>
@@ -217,7 +217,7 @@
     <Description>Mya is available in three colours, so you can mix and match the set with other cushions. They look beautiful against purples, teals and deep neutral tones.</Description>
   </Article>
   <Article>
-    <Id>211</Id>
+    <ArticleID>211</ArticleID>
     <Title>Novello Scatter Cushion 50 x 50cm, Purple and Gold</Title>
     <Price>15</Price>
     <Picture>novello_scatter_cushion_50_x_50_purple_gold_pp_2.jpg</Picture>
@@ -225,7 +225,7 @@
     <Description>Inspired by the vibrant tones of jewels and precious gems, the Novello collection adds a certain air of opulence to your living space.</Description>
   </Article>
   <Article>
-    <Id>212</Id>
+    <ArticleID>212</ArticleID>
     <Title>Talen Cushion 45 x 45cm, Blue</Title>
     <Price>15</Price>
     <Picture>talen_cushion_45x45cm_blue_1.jpg</Picture>
@@ -233,7 +233,7 @@
     <Description>No need to hunt for authentic patterns to suit your decor. The Talen cushion will give your living space the eclectic detail it's been missing.</Description>
   </Article>
   <Article>
-    <Id>213</Id>
+    <ArticleID>213</ArticleID>
     <Title>Porthole Cushion 40 x 40cm, Yellow</Title>
     <Price>25</Price>
     <Picture>rodnik_cushion_45x45_porthole_pl.jpg</Picture>
@@ -241,7 +241,7 @@
     <Description>This range was created especially for us by Fashion Designer Philip Colbert. Like the pieces on his own label, it blends pop-art, fashion and culture.</Description>
   </Article>
   <Article>
-    <Id>214</Id>
+    <ArticleID>214</ArticleID>
     <Title>Scale Cushion 40 x 40cm, Black and White</Title>
     <Price>25</Price>
     <Picture>rodnik_cushion_45x45_scales_pl.jpg</Picture>
@@ -249,7 +249,7 @@
     <Description>Why not add some eye-catching pattern to your home with Colbert's Scale cushion. It makes a lively focal piece for living rooms, bedrooms and play rooms.</Description>
   </Article>
   <Article>
-    <Id>215</Id>
+    <ArticleID>215</ArticleID>
     <Title>Fish Cushion 40 x 40cm, Red</Title>
     <Price>25</Price>
     <Picture>rodnik_cushion_45x45_fish_pl.jpg</Picture>
@@ -257,7 +257,7 @@
     <Description>This animated cushion really comes to life with the rest of the collection. Each piece has a fun, nautical design to liven up your home.</Description>
   </Article>
   <Article>
-    <Id>216</Id>
+    <ArticleID>216</ArticleID>
     <Title>Decker Large Square Cushion 50 x 50cm, Bus Print</Title>
     <Price>40</Price>
     <Picture>decker_cushion_product_listing_1.jpg</Picture>
@@ -265,7 +265,7 @@
     <Description>Kids will love this. Clad in a bespoke woven fabric with an iconic British silhouette - rows of colourful double decker buses. Made in the UK.</Description>
   </Article>
   <Article>
-    <Id>217</Id>
+    <ArticleID>217</ArticleID>
     <Title>Jack Large Scatter Cushion 50 x 50cm, Union Jack Pink</Title>
     <Price>35</Price>
     <Picture>large_scatter_cushion_union_jack_pink_and_red_listing_1_1.jpg</Picture>
@@ -273,7 +273,7 @@
     <Description>Fly the flag for British design with this bespoke Union Jack cushion. With distressed fabric and a modern colourway for a fun twist</Description>
   </Article>
   <Article>
-    <Id>218</Id>
+    <ArticleID>218</ArticleID>
     <Title>Jack Large Scatter Cushion 50 x 50cm, Union Jack Charcoal</Title>
     <Price>29</Price>
     <Picture>large_scatter_cushion_union_jack_charcoal_and_mocha_listing_1_1.jpg</Picture>
@@ -281,7 +281,7 @@
     <Description>Use it on its own to add homegrown design and texture to your look. Or pair it with other pieces in the Britannia Collection for impact.</Description>
   </Article>
   <Article>
-    <Id>219</Id>
+    <ArticleID>219</ArticleID>
     <Title>Holst Broken Lines Printed Pouffe, Indigo</Title>
     <Price>89</Price>
     <Picture>holst_pouffe_striped_indigo_swatch.jpg</Picture>
@@ -289,7 +289,7 @@
     <Description>There are no rules. Our Holst collection can be used as a seat, footstool or add a tray and it becomes a coffee table. It gives your home a cool and casual feel.</Description>
   </Article>
   <Article>
-    <Id>220</Id>
+    <ArticleID>220</ArticleID>
     <Title>Holst Broken Lines Printed Pouffe, Tonal Grey</Title>
     <Price>89</Price>
     <Picture>holst_pouffe_striped_grey_swatch.jpg</Picture>
@@ -297,7 +297,7 @@
     <Description>Holst comes in two prints and two colours. Inspired by abstract patterns, choose from a mash-up of edgy lines or a mix of shadowy squares. Looks fab in pairs or on their own.</Description>
   </Article>
   <Article>
-    <Id>221</Id>
+    <ArticleID>221</ArticleID>
     <Title>Dipped 35 x 60cm Cushion, Delft Blue</Title>
     <Price>11</Price>
     <Picture>dipped_35x60_cushion_delft_blue_pl.jpg</Picture>
@@ -305,7 +305,7 @@
     <Description>Bring a blush of bright colour with our exclusive Dipped cushions. Designed to add a decorative touch to your bed, and prop you up ready for breakfast in bed.</Description>
   </Article>
   <Article>
-    <Id>222</Id>
+    <ArticleID>222</ArticleID>
     <Title>Loop Rug 160 x 230cm, Grey and Peppermint Mix</Title>
     <Price>299</Price>
     <Picture>loop_rug_grey_peppermint.jpg</Picture>
@@ -313,7 +313,7 @@
     <Description>Made by artisans in India, each shape is hand carved to enhance its geometric design. Not just an ordinary rug, it’s a masterpiece.</Description>
   </Article>
   <Article>
-    <Id>223</Id>
+    <ArticleID>223</ArticleID>
     <Title>Loop Rug 160 x 230cm, Monochrome Mix</Title>
     <Price>299</Price>
     <Picture>loop_rug_160_x_230cm_monochrome.jpg</Picture>
@@ -321,7 +321,7 @@
     <Description>Classic monochrome, tonal pastels and retro colours make the Loop collection an easy fit for both the upstairs or downstairs areas of your home.</Description>
   </Article>
   <Article>
-    <Id>224</Id>
+    <ArticleID>224</ArticleID>
     <Title>Hex Spot Rug 170 x 240cm, Coal Grey</Title>
     <Price>249</Price>
     <Picture>pl_2.jpg</Picture>
@@ -329,7 +329,7 @@
     <Description>Inspired by an age old style, these lightweight rugs are used all over the world. With contemporary geometric designs.</Description>
   </Article>
   <Article>
-    <Id>301</Id>
+    <ArticleID>301</ArticleID>
     <Title>Marcell Sideboard, Grey</Title>
     <Price>349</Price>
     <Picture>marcell_grey_sideboard_product_pl.jpg</Picture>
@@ -337,7 +337,7 @@
     <Description>No need to break the bank on stylish storage solutions. The Marcell sideboard looks like it cost a small fortune - we won't tell if you don't.</Description>
   </Article>
   <Article>
-    <Id>302</Id>
+    <ArticleID>302</ArticleID>
     <Title>Marcell Media Unit, Grey</Title>
     <Price>299</Price>
     <Picture>marcell_grey_media_unit_product_pl.jpg</Picture>
@@ -345,7 +345,7 @@
     <Description>No need to break the bank on stylish storage solutions. The Marcell Media Unit looks like it cost a small fortune - we won't tell if you don't.</Description>
   </Article>
   <Article>
-    <Id>303</Id>
+    <ArticleID>303</ArticleID>
     <Title>Marcell Compact Sideboard, Grey</Title>
     <Price>299</Price>
     <Picture>marcell_grey_sideboard_compact_product_pl.jpg</Picture>
@@ -353,7 +353,7 @@
     <Description>No need to break the bank on stylish storage solutions. The Marcell sideboard looks like it cost a small fortune - we won't tell if you don't.</Description>
   </Article>
   <Article>
-    <Id>304</Id>
+    <ArticleID>304</ArticleID>
     <Title>Henge Large Storage Unit, Oak and White</Title>
     <Price>549</Price>
     <Picture>boundary_henge_white_product_listing_2_1.jpg</Picture>
@@ -361,7 +361,7 @@
     <Description>The details stand out - from the striking contrast between the sleek white lacquer and wood, to the beautiful sleigh feet in solid oak.</Description>
   </Article>
   <Article>
-    <Id>305</Id>
+    <ArticleID>305</ArticleID>
     <Title>Henge Large Storage Unit, Walnut and Red</Title>
     <Price>549</Price>
     <Picture>boundary_henge_red_product_listing_1.jpg</Picture>
@@ -369,7 +369,7 @@
     <Description>The details stand out - from the striking contrast between the red lacquer and wood, to the beautiful sleigh feet in solid walnut.</Description>
   </Article>
   <Article>
-    <Id>306</Id>
+    <ArticleID>306</ArticleID>
     <Title>Aveiro Cabinet, Oak</Title>
     <Price>599</Price>
     <Picture>averio_cabinet_oak.jpg</Picture>
@@ -377,7 +377,7 @@
     <Description>If you like a bit of Scandi with your storage, then you’ve come to the right place. Aveiro is a sophisticated piece with clean lines and a sleek, minimal look.</Description>
   </Article>
   <Article>
-    <Id>307</Id>
+    <ArticleID>307</ArticleID>
     <Title>Marcell Media Unit, White</Title>
     <Price>299</Price>
     <Picture>marcell_white_media_unit_product_pl.jpg</Picture>
@@ -385,7 +385,7 @@
     <Description>No need to break the bank on stylish storage solutions. The Marcell Media Unit looks like it cost a small fortune - we won't tell if you don't.</Description>
   </Article>
   <Article>
-    <Id>308</Id>
+    <ArticleID>308</ArticleID>
     <Title>Marcell Sideboard, White</Title>
     <Price>349</Price>
     <Picture>marcell_white_sideboard_product_pl.jpg</Picture>
@@ -393,7 +393,7 @@
     <Description>No need to break the bank on stylish storage solutions. The Marcell sideboard looks like it cost a small fortune - we won't tell if you don't.</Description>
   </Article>
   <Article>
-    <Id>309</Id>
+    <ArticleID>309</ArticleID>
     <Title>Bourbon Vintage Wardrobe, Distressed Grey</Title>
     <Price>549</Price>
     <Picture>bourbon_wardrobe_pl.jpg</Picture>
@@ -401,7 +401,7 @@
     <Description>This wardrobe adds a hint of vintage style. Inspired by French neoclassical lines and brought up-to-date with a contemporary distressed finish.</Description>
   </Article>
   <Article>
-    <Id>310</Id>
+    <ArticleID>310</ArticleID>
     <Title>Belvoir Wardrobe, Natural Ash</Title>
     <Price>699</Price>
     <Picture>belvoir_wardrobe_natural_ash.jpg</Picture>
@@ -409,7 +409,7 @@
     <Description>Combining the ornate curves of classic French design with the raw beauty of natural ash, for a pared-down take on a traditional style.</Description>
   </Article>
   <Article>
-    <Id>311</Id>
+    <ArticleID>311</ArticleID>
     <Title>Ledger Wardrobe, Dark Stain Elm</Title>
     <Price>649</Price>
     <Picture>ledger_wardrobe_dark_pl.jpg</Picture>
@@ -417,7 +417,7 @@
     <Description>An ideal match to the Ledger double bed. Pair with other collection pieces like the chest of drawers for a complete, contemporary look.</Description>
   </Article>
   <Article>
-    <Id>312</Id>
+    <ArticleID>312</ArticleID>
     <Title>Ledger Wardrobe, Oak</Title>
     <Price>649</Price>
     <Picture>ledger_cabinet_wardrobe_pl_2.jpg</Picture>
@@ -425,7 +425,7 @@
     <Description>An ideal match to the Ledger double bed. Pair with other collection pieces like the chest of drawers for a complete, contemporary look.</Description>
   </Article>
   <Article>
-    <Id>401</Id>
+    <ArticleID>401</ArticleID>
     <Title>2 x Flynn Dining Chairs, Persian Grey</Title>
     <Price>149</Price>
     <Picture>flynn_chairs_persian_grey_pl_1.jpg</Picture>
@@ -433,7 +433,7 @@
     <Description>Add understated elegance to your dining room with this pair of chairs. With simple, sleek lines for an effortless, pared down look.</Description>
   </Article>
   <Article>
-    <Id>402</Id>
+    <ArticleID>402</ArticleID>
     <Title>2 x Jersey Dining Chairs, Graphite Grey</Title>
     <Price>199</Price>
     <Picture>jersey_dining_chair_graphite_grey_pl_2.jpg</Picture>
@@ -441,7 +441,7 @@
     <Description>Inspired by the iconic fifties diner look and given a modern update, keeping the design intact without it feeling dated.</Description>
   </Article>
   <Article>
-    <Id>403</Id>
+    <ArticleID>403</ArticleID>
     <Title>2 x Hoxton Dining Chairs, Pistachio Green</Title>
     <Price>149</Price>
     <Picture>hoxton_collection_chairs_pistachio_green_pl_1_1.jpg</Picture>
@@ -449,7 +449,7 @@
     <Description>East meets West and traditional meets modern in the Hoxton's low, Oriental-style back and updated take on heritage buttoning.</Description>
   </Article>
   <Article>
-    <Id>404</Id>
+    <ArticleID>404</ArticleID>
     <Title>2 x Wilton Dining Chairs, Graphite Grey</Title>
     <Price>139</Price>
     <Picture>wilton_dining_chairs_grey_pl_2_1.jpg</Picture>
@@ -457,7 +457,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In a range of understated colours.</Description>
   </Article>
   <Article>
-    <Id>405</Id>
+    <ArticleID>405</ArticleID>
     <Title>Percy Scoop Back Chair, Putty Beige</Title>
     <Price>99</Price>
     <Picture>percy_chair_putty_beige_pl_3.jpg</Picture>
@@ -465,7 +465,7 @@
     <Description>With its clean contours and subtle details, this chair will add a retro feel to any design-led dining room. In a neutral putty beige.</Description>
   </Article>
   <Article>
-    <Id>406</Id>
+    <ArticleID>406</ArticleID>
     <Title>Percy Scoop Back Chair, Pewter Grey</Title>
     <Price>99</Price>
     <Picture>percy_chair_pewter_grey_pl_2.jpg</Picture>
@@ -473,7 +473,7 @@
     <Description>The scoop back shape gives this chair a smooth, streamlined silhouette and comfy, supportive sit. Finished with contrast stain legs.</Description>
   </Article>
   <Article>
-    <Id>407</Id>
+    <ArticleID>407</ArticleID>
     <Title>2 x Flynn Dining Chairs, Biscuit Beige</Title>
     <Price>149</Price>
     <Picture>listing_2__1.jpg</Picture>
@@ -481,7 +481,7 @@
     <Description>Add understated elegance to your dining room with this pair of chairs. With simple, sleek lines for an effortless, pared-down look.</Description>
   </Article>
   <Article>
-    <Id>408</Id>
+    <ArticleID>408</ArticleID>
     <Title>2 x Flynn Dining Chairs, Midnight Black</Title>
     <Price>149</Price>
     <Picture>flynn_chairs_midnight_black_pl_1.jpg</Picture>
@@ -489,7 +489,7 @@
     <Description>Add understated elegance to your dining room with this pair of chairs. With simple, sleek lines for an effortless, pared down look.</Description>
   </Article>
   <Article>
-    <Id>409</Id>
+    <ArticleID>409</ArticleID>
     <Title>2 x Flynn Dining Chairs, Merlot Red</Title>
     <Price>149</Price>
     <Picture>_flynn_dining_chair_merlot_pl_3.jpg</Picture>
@@ -497,7 +497,7 @@
     <Description>Add understated elegance to your dining room with this pair of chairs. With simple, sleek lines for an effortless, pared down look.</Description>
   </Article>
   <Article>
-    <Id>410</Id>
+    <ArticleID>410</ArticleID>
     <Title>2 x Flynn Dining Chairs, Chestnut</Title>
     <Price>149</Price>
     <Picture>flynn_dinning_chair_pu_brown_pl_2.jpg</Picture>
@@ -505,7 +505,7 @@
     <Description>Add understated elegance to your dining room with this pair of chairs. With simple, sleek lines for an effortless, pared down look.</Description>
   </Article>
   <Article>
-    <Id>411</Id>
+    <ArticleID>411</ArticleID>
     <Title>2 x Jacob Dining Chairs Alabaster and Ash</Title>
     <Price>189</Price>
     <Picture>jacob_chairs_alabaster_ash_pl_1.jpg</Picture>
@@ -513,7 +513,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>412</Id>
+    <ArticleID>412</ArticleID>
     <Title>2 x Jacob Dining Chairs Coal Black and Walnut</Title>
     <Price>189</Price>
     <Picture>jacob_chairs_black_walnut_pl.jpg</Picture>
@@ -521,7 +521,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>413</Id>
+    <ArticleID>413</ArticleID>
     <Title>2 x Jacob Dining Chairs Jasper Brown and Ash</Title>
     <Price>189</Price>
     <Picture>jacob_chairs_brown_ash_pl.jpg</Picture>
@@ -529,7 +529,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>414</Id>
+    <ArticleID>414</ArticleID>
     <Title>2 x Jacob Dining Chairs Natural Ash</Title>
     <Price>179</Price>
     <Picture>jacob_chairs_natural_ash_pl.jpg</Picture>
@@ -537,7 +537,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>415</Id>
+    <ArticleID>415</ArticleID>
     <Title>2 x Jacob Dining Chairs Natural Walnut</Title>
     <Price>179</Price>
     <Picture>jacob_chairs_natural_walnut_pl.jpg</Picture>
@@ -545,7 +545,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>416</Id>
+    <ArticleID>416</ArticleID>
     <Title>2 x Jacob Dining Chairs Amber Orange and Walnut</Title>
     <Price>189</Price>
     <Picture>jacob_chairs_orange_walnut_pl_1.jpg</Picture>
@@ -553,7 +553,7 @@
     <Description>This pair of dining chairs are inspired by mid-century Scandinavian design - so Jacob is pronounced with a Y instead of J.</Description>
   </Article>
   <Article>
-    <Id>417</Id>
+    <ArticleID>417</ArticleID>
     <Title>2 x Wilton Dining Chairs, Biscuit Beige</Title>
     <Price>139</Price>
     <Picture>wilton_dining_chairs_beige_pl.jpg</Picture>
@@ -561,7 +561,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In understated beige, merlot red or teira blue.</Description>
   </Article>
   <Article>
-    <Id>418</Id>
+    <ArticleID>418</ArticleID>
     <Title>2 x Wilton Dining Chairs, Teira Blue</Title>
     <Price>139</Price>
     <Picture>wilton_dining_chairs_blue_pl.jpg</Picture>
@@ -569,7 +569,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In understated beige, merlot red or teira blue.</Description>
   </Article>
   <Article>
-    <Id>419</Id>
+    <ArticleID>419</ArticleID>
     <Title>2 x Wilton Dining Chairs, Merlot Red</Title>
     <Price>139</Price>
     <Picture>wilton_dining_chairs_red_pl11.jpg</Picture>
@@ -577,7 +577,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In a rich merlot red to add warmth to any set up.</Description>
   </Article>
   <Article>
-    <Id>420</Id>
+    <ArticleID>420</ArticleID>
     <Title>Wilton Chair, Teira Blue</Title>
     <Price>129</Price>
     <Picture>wilton_chair_blue_pl.jpg</Picture>
@@ -585,7 +585,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In understated beige, merlot red or teira blue.</Description>
   </Article>
   <Article>
-    <Id>421</Id>
+    <ArticleID>421</ArticleID>
     <Title>Wilton Chair, Merlot Red</Title>
     <Price>129</Price>
     <Picture>4_wilton_chair_merlot_pl_1.jpg</Picture>
@@ -593,7 +593,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In understated beige or merlot red for a decadent touch</Description>
   </Article>
   <Article>
-    <Id>422</Id>
+    <ArticleID>422</ArticleID>
     <Title>Wilton Chair, Graphite Grey</Title>
     <Price>129</Price>
     <Picture>wilton_chair_grey_pl.jpg</Picture>
@@ -601,7 +601,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In a range of understated colours.</Description>
   </Article>
   <Article>
-    <Id>423</Id>
+    <ArticleID>423</ArticleID>
     <Title>Wilton Chair, Biscuit Beige</Title>
     <Price>129</Price>
     <Picture>4_wilton_chair_biscuit_beige_pl_1.jpg</Picture>
@@ -609,7 +609,7 @@
     <Description>Striking and sophisticated - with sleek, structured lines and a low back. In understated beige or merlot red for a decadent touch.</Description>
   </Article>
   <Article>
-    <Id>424</Id>
+    <ArticleID>424</ArticleID>
     <Title>Percy Scoop Back Chair, Midnight Black</Title>
     <Price>99</Price>
     <Picture>percy_chair_midnight_black_pl.jpg</Picture>
@@ -617,7 +617,7 @@
     <Description>With its clean contours and subtle details, this comfy, cushioned chair will add a retro feel to any design-led dining room.</Description>
   </Article>
   <Article>
-    <Id>425</Id>
+    <ArticleID>425</ArticleID>
     <Title>Percy Scoop Back Chair, Biscuit Beige</Title>
     <Price>99</Price>
     <Picture>percy_chair_biscuit_beige_pl.jpg</Picture>
@@ -625,7 +625,7 @@
     <Description>With its clean contours and subtle details, this comfy, cushioned chair will add a retro feel to any design-led dining room.</Description>
   </Article>
   <Article>
-    <Id>426</Id>
+    <ArticleID>426</ArticleID>
     <Title>2 x Dolly Dining Chairs, Walnut and Black</Title>
     <Price>99</Price>
     <Picture>dolly_dining_chairs_x2_walnut_black_pl_1_2.jpg</Picture>
@@ -633,7 +633,7 @@
     <Description>Pencil in a power lunch, or a pow-wow. The Dolly chairs add a mark of sophistication to dining rooms, board rooms or meeting rooms.</Description>
   </Article>
   <Article>
-    <Id>427</Id>
+    <ArticleID>427</ArticleID>
     <Title>2 x Dolly Dining Chairs, Ash and Grey</Title>
     <Price>99</Price>
     <Picture>dolly_dining_chairs_x2_ash_grey_fabric_pl_2.jpg</Picture>
