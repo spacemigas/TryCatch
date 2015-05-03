@@ -1,0 +1,12 @@
+﻿<section>
+    <h1>Thanks</h1>
+
+    <p>
+        You order was successfully placed with the ID <span data-bind="text: lastOrder().orderID"></span>
+    </p>
+
+    <div class="actions">
+        <a class="button continue right" href="~/">Continue</a>
+    </div>
+</section>
+<script>ko.applyBindings(new CartViewModel());</script>

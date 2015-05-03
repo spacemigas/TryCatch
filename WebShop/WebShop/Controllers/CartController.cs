@@ -13,5 +13,10 @@ namespace WebShop.Controllers
         {
             return View();
         }
+
+        public ActionResult Thanks()
+        {
+            return View();
+        }
     }
 }

@@ -8,14 +8,15 @@ namespace WebShop.Controllers
     {
         private OrdersContext _db = new OrdersContext();
 
-        public void PostOrders([FromBody]Order order)
+        public Order PostOrders([FromBody]Order order)
         {
-            order.DateTime = DateTime.UtcNow;
+            order.Update();
             if (ModelState.IsValid)
             {
                 _db.Orders.Add(order);
                 _db.SaveChanges();
             }
+            return order;
         }
 
         protected override void Dispose(bool disposing)

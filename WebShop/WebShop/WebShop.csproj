@@ -280,6 +280,7 @@
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Cart\Checkout.cshtml" />
     <None Include="Scripts\knockout.validation.min.js.map" />
+    <Content Include="Views\Cart\Thanks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-2.1.3.min.map" />

@@ -1,6 +1,7 @@
 function CartViewModel() {
     var self = this,
         cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : [],
+        lastOrder = sessionStorage.lastOrder ? JSON.parse(sessionStorage.lastOrder) : {},
         vatRate = 0.23;
 
     ko.validation.init({
@@ -12,6 +13,7 @@ function CartViewModel() {
     }, true);
 
     this.cart = ko.observableArray(cart);
+    this.lastOrder = ko.observable(lastOrder);
     this.subtotal = ko.observable(0);
     this.vat = ko.observable(0);
     this.total = ko.observable(0);
@@ -70,11 +72,11 @@ function CartViewModel() {
         };
         ko.utils.arrayForEach(self.cart(), function (item) {
             var detail = ko.utils.arrayFirst(order.details, function (detail) {
-                return detail.articleId === item.articleId;
+                return detail.articleID === item.articleID;
             });
             if (!detail) {
                 detail = {
-                    articleId: item.articleId,
+                    articleID: item.articleID,
                     price: item.price,
                     quantity: 0
                 };
@@ -89,13 +91,22 @@ function CartViewModel() {
             data: JSON.stringify(order),
             contentType: 'application/json; charset=utf-8',
             statusCode: {
-                201: function () {
-                    sessionStorage.cart = JSON.stringify([]);
-                },
-                400: function () {
-                }
+                200: self.success,
+                201: self.success,
+                204: self.success,
+                400: self.error
             }
         });
+    };
+
+    this.success = function (order) {
+        self.lastOrder(order);
+        sessionStorage.lastOrder = JSON.stringify(order);
+        sessionStorage.cart = JSON.stringify([]);
+        window.location = 'thanks';
+    };
+
+    this.error = function () {
     };
 
     this.update();
