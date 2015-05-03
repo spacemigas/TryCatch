@@ -25,31 +25,21 @@ namespace WebShop.Controllers
             return _repository.Get().Skip((page > 0 ? page - 1 : 0) * _pageSize).Take(_pageSize);
         }
 
-        // GET api/articles
-        public IEnumerable<string> Get()
+        public Article Get(int id)
         {
-            return new string[] { "value1", "value2" };
+            Article article;
+            _repository.TryGet(id, out article);
+            return article;
         }
 
-        // GET api/articles/5
-        public string Get(int id)
+        public void Post([FromBody]Article article)
         {
-            return "value";
+            _repository.Add(article);
         }
 
-        // POST api/articles
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/articles/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/articles/5
         public void Delete(int id)
         {
+            _repository.Delete(id);
         }
     }
 }

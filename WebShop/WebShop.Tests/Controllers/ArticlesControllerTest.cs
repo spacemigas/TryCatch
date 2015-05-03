@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebShop.Controllers;
 
 namespace WebShop.Tests.Controllers
@@ -18,36 +17,8 @@ namespace WebShop.Tests.Controllers
         [TestMethod]
         public void Get()
         {
-            var result = _controller.Get();
-            Assert.IsNotNull(result);
-            Assert.AreEqual(2, result.Count());
-            Assert.AreEqual("value1", result.ElementAt(0));
-            Assert.AreEqual("value2", result.ElementAt(1));
-        }
-
-        [TestMethod]
-        public void GetById()
-        {
-            var result = _controller.Get(5);
-            Assert.AreEqual("value", result);
-        }
-
-        [TestMethod]
-        public void Post()
-        {
-            _controller.Post("value");
-        }
-
-        [TestMethod]
-        public void Put()
-        {
-            _controller.Put(5, "value");
-        }
-
-        [TestMethod]
-        public void Delete()
-        {
-            _controller.Delete(5);
+            var article = _controller.Get(1);
+            Assert.AreEqual("Article1", article.Title);
         }
     }
 }

@@ -26,6 +26,7 @@ function CartViewModel() {
     this.houseNumber = ko.observable();
     this.city = ko.observable();
     this.zipCode = ko.observable();
+    this.observations = ko.observable();
     this.errors = ko.validation.group(this);
 
     this.round = function (value) {
@@ -66,7 +67,8 @@ function CartViewModel() {
                 address: self.address(),
                 houseNumber: self.houseNumber(),
                 city: self.city(),
-                zipCode: self.zipCode()
+                zipCode: self.zipCode(),
+                observations: self.observations()
             },
             details: []
         };

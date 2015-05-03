@@ -29,5 +29,7 @@ namespace WebShop
 
         [Required, MaxLength(50)]
         public string ZipCode { get; set; }
+
+        public string Observations { get; set; }
     }
 }
