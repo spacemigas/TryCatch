@@ -10,17 +10,18 @@ namespace WebShop
 
         protected Dictionary<int, Article> Articles { get; set; }
 
-        public IEnumerable<Article> Get()
+        public virtual IEnumerable<Article> Get()
         {
             return Articles.Values.OrderBy(article => article.ArticleID);
         }
 
-        public bool TryGet(int id, out Article article)
+        public virtual Article Get(int id)
         {
-            return Articles.TryGetValue(id, out article);
+            Article article;
+            return Articles.TryGetValue(id, out article) ? article : null;
         }
 
-        public Article Add(Article article)
+        public virtual Article Add(Article article)
         {
             if (article == null)
                 throw new ArgumentNullException("article");
@@ -30,12 +31,12 @@ namespace WebShop
             return article;
         }
 
-        public bool Delete(int id)
+        public virtual bool Delete(int id)
         {
             return Articles.Remove(id);
         }
 
-        public bool Update(Article article)
+        public virtual bool Update(Article article)
         {
             if (article == null)
                 throw new ArgumentNullException("article");

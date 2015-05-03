@@ -1,0 +1,15 @@
+﻿<section>
+    <h1>Administration</h1>
+
+    <ul data-bind="foreach: articles">
+        <li class="admin row">
+            <a>
+                <span data-bind="text: title" class="left" style="width: 70%"></span>
+                <span data-bind="text: price" class="money right" style="width: 30%"></span>
+            </a>
+        </li>
+    </ul>
+
+</section>
+
+<script>ko.applyBindings(new AdminViewModel());</script>

@@ -6,7 +6,7 @@ namespace WebShop
     {
         IEnumerable<Article> Get();
 
-        bool TryGet(int id, out Article article);
+        Article Get(int id);
 
         Article Add(Article article);
 

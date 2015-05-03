@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebShop.Controllers;
 
-namespace WebShop.Tests.Controllers
+namespace WebShop.Tests
 {
     [TestClass]
     public class ArticlesControllerTest

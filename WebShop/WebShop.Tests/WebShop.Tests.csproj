@@ -122,8 +122,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticleTestRepository.cs" />
-    <Compile Include="OrderTest.cs" />
+    <Compile Include="Classes\ArticleTestRepository.cs" />
+    <Compile Include="Models\OrderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\ArticlesControllerTest.cs" />
   </ItemGroup>
