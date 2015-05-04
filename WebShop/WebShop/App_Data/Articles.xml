@@ -5,7 +5,7 @@
     <Category>Lamps</Category>
     <Title>May Pendant Shade, Neon Blue</Title>
     <Picture>may_pendant_light_blue_pl.jpg</Picture>
-    <Price>45</Price>
+    <Price>49</Price>
     <Description>Inspired by fashion runways, these shades are designed to stand out. The neon accents lets you show off your style, just turn them on and strike a pose.</Description>
   </Article>
   <Article>
@@ -13,7 +13,7 @@
     <Category>Lamps</Category>
     <Title>May Pendant Shade, Neon Orange</Title>
     <Picture>may_pendant_light_orange_pl.jpg</Picture>
-    <Price>19</Price>
+    <Price>20</Price>
     <Description>If you already have pendant lighting set up in your home then you’re good to go. There’s no need to call an electrician, these shades can be fitted quickly and easily.</Description>
   </Article>
   <Article>
@@ -639,37 +639,5 @@
     <Picture>dolly_dining_chairs_x2_ash_grey_fabric_pl_2.jpg</Picture>
     <Price>99</Price>
     <Description>Pencil in a power lunch, or a pow-wow. The Dolly chairs add a mark of sophistication to dining rooms, board rooms or meeting rooms.</Description>
-  </Article>
-  <Article>
-    <ArticleID>0</ArticleID>
-    <Category>Lamps</Category>
-    <Title>Broadway Arrow Table Lamp, Black</Title>
-    <Picture>broardway_arrow_pl_5.jpg</Picture>
-    <Price>88</Price>
-    <Description>Table or wall? It's your choice - with handy wall fittings and a cable mounted switch, you can set it up exactly as you like.</Description>
-  </Article>
-  <Article>
-    <ArticleID>1</ArticleID>
-    <Category>Lamps</Category>
-    <Title>Broadway Arrow Table Lamp, Black</Title>
-    <Picture>broardway_arrow_pl_5.jpg</Picture>
-    <Price>89</Price>
-    <Description>Table or wall? It's your choice - with handy wall fittings and a cable mounted switch, you can set it up exactly as you like.</Description>
-  </Article>
-  <Article>
-    <ArticleID>2</ArticleID>
-    <Category>Lamps</Category>
-    <Title>Broadway Arrow Table Lamp, Black</Title>
-    <Picture>broardway_arrow_pl_5.jpg</Picture>
-    <Price>81</Price>
-    <Description>Table or wall? It's your choice - with handy wall fittings and a cable mounted switch, you can set it up exactly as you like.</Description>
-  </Article>
-  <Article>
-    <ArticleID>3</ArticleID>
-    <Category>Lamps</Category>
-    <Title>Broadway Arrow Table Lamp, Black</Title>
-    <Picture>broardway_arrow_pl_5.jpg</Picture>
-    <Price>89</Price>
-    <Description>Table or wall? It's your choice - with handy wall fittings and a cable mounted switch, you can set it up exactly as you like.</Description>
   </Article>
 </ArrayOfArticle>
